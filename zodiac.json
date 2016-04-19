@@ -1,0 +1,1086 @@
+{
+	"zodiacs" : [
+		{
+			"mainZodiac" : "Aries",
+			"zodiacsToCompare" : [
+				{
+					"zodiacName" : "Aries",
+					"compatibilityDescription" : " Двум агрессивным знакам зодиака довольно трудно налаживать общение. Соперничество в этой паре не даст возможности развиваться равноправным партнерским отношениям.",
+					"compatibilityDescriptionLove" : " Союз будет отличаться упорством, настойчивостью, твердостью характера обоих партнеров. Каждому партнеру придется быть более сдержанным.",
+					"interestCompatibilityFriends" : 40,
+					"interestCompatibilityLove" : 46
+				},
+				{
+					"zodiacName" : "Taurus",
+					"compatibilityDescription" : " Овен считает Тельца бездушной машиной, а Телец не любит шумные компании и необдуманные поступки. Плохая совместимость в дружбе.",
+					"compatibilityDescriptionLove" : " Совместимость пары кажется невозможной из-за сильного различия ценностей, однако именно это поможет построить гармоничные и хорошие отношения.",
+					"interestCompatibilityFriends" : 45,
+					"interestCompatibilityLove" : 82
+				},
+				{
+					"zodiacName" : "Gemini",
+					"compatibilityDescription" : " Дружба будет приносить радость обоим знакам зодиака. Довольно много схожестей в характере и жизненных целях.",
+					"compatibilityDescriptionLove" : " Довольно трудно построить отношения из-за разницы темпераментов. Овен - импульсивный знак, а Близнецы - тихий и спокойный.",
+					"interestCompatibilityFriends" : 87,
+					"interestCompatibilityLove" : 51
+				},
+				{
+					"zodiacName" : "Cancer",
+					"compatibilityDescription" : " В дружбе совместимость Рака и Овна довольно сомнительна. Овен слишком импульсивен для осторожного Рака. Минимум общих интересов.",
+					"compatibilityDescriptionLove" : " Довольно неплохие шансы на длительные отношения, однако возможны серьезные разногласия в финансовых вопросах.",
+					"interestCompatibilityFriends" : 43,
+					"interestCompatibilityLove" : 67
+				},
+				{
+					"zodiacName" : "Leo",
+					"compatibilityDescription" : " Отличная совместимость в дружбе. Полное понимание и общие интересы. Однако, если Овен научится быть более сдержанным.",
+					"compatibilityDescriptionLove" : "  Неплохая совместимость. Но только в том случае, если Овен сможет контролировать свои эмоции.",
+					"interestCompatibilityFriends" : 68,
+					"interestCompatibilityLove" : 57
+				},
+				{
+					"zodiacName" : "Virgo",
+					"compatibilityDescription" : " Плохая совместимость как в дружбе, так и в отношениях. Активный и эмоциональный Овен просто не сможет уживаться с консерватором Девой.",
+					"compatibilityDescriptionLove" : " Плохая совместимость, полное непонимание друг друга.",
+					"interestCompatibilityFriends" : 32,
+					"interestCompatibilityLove" : 27
+				},
+				{
+					"zodiacName" : "Libra",
+					"compatibilityDescription" : " Этим знакам зодиака крайне трудно стать даже приятелями из-за огромной разницы в темпераментах.",
+					"compatibilityDescriptionLove" : "  Пара имеет все шансы на длительные отношения.",
+					"interestCompatibilityFriends" : 32,
+					"interestCompatibilityLove" : 57
+				},
+				{
+					"zodiacName" : "Scorpio",
+					"compatibilityDescription" : " Отличные шансы на крепкую дружбу. Оба знака упрямые, дерзкие и всегда знают, что ответить.",
+					"compatibilityDescriptionLove" : " Трудно предсказать развитие отношений у такой пары. Они могут быть, как идеальными, так и ужасными.",
+					"interestCompatibilityFriends" : 77,
+					"interestCompatibilityLove" : 50
+				},
+				{
+					"zodiacName" : "Sagittarius",
+					"compatibilityDescription" : " Отличные шансы стать настоящими друзьями. Они отлично понимают друг друга, что даст шанс проводить часы напролет вместе.",
+					"compatibilityDescriptionLove" : " Большой шанс на построение длительных отношений. У данных знаков много общего, что позволит им понимать друг друга намного лучше. ",
+					"interestCompatibilityFriends" : 84,
+					"interestCompatibilityLove" : 73
+				},
+				{
+					"zodiacName" : "Capricorn",
+					"compatibilityDescription" : " Совместимость в дружбе не будет идеальной. Данные знаки нуждаются  в друзьях, которые подобны им самим.",
+					"compatibilityDescriptionLove" : " Неплохие шансы на построение гармоничных отношений, несмотря на множество отличий.",
+					"interestCompatibilityFriends" : 54,
+					"interestCompatibilityLove" : 58
+				},
+				{
+					"zodiacName" : "Aquarius",
+					"compatibilityDescription" : " У данной пары отличные шансы на хорошую, долгую дружбу.",
+					"compatibilityDescriptionLove" : " У данной пары отличные шансы построить хорошие отношения. Оба готовы к новым экспериментам в жизни и в отношениях.",
+					"interestCompatibilityFriends" : 77,
+					"interestCompatibilityLove" : 78
+				},
+				{
+					"zodiacName" : "Pisces",
+					"compatibilityDescription" : " Дружба в этой паре маловероятна, слишком разные темпераменты, потребности и темы для разговоров.",
+					"compatibilityDescriptionLove" : " Очень сложные отношения, в которых партнёрам будет трудно понять друг друга. ",
+					"interestCompatibilityFriends" : 47,
+					"interestCompatibilityLove" : 42
+				}
+			]
+		},
+		
+		{
+			"mainZodiac" : "Taurus",
+			"zodiacsToCompare" : [
+				{
+					"zodiacName" : "Aries",
+					"compatibilityDescription" : " Овен считает Тельца бездушной машиной, а Телец не любит шумные компании и необдуманные поступки. Плохая совместимость в дружбе.",
+					"compatibilityDescriptionLove" : " Совместимость пары кажется невозможной из-за сильного различия ценностей, однако именно это поможет построить гармоничные и хорошие отношения.",
+					"interestCompatibilityFriends" : 45,
+					"interestCompatibilityLove" : 82
+				},
+				{
+					"zodiacName" : "Taurus",
+					"compatibilityDescription" : " Есть хорошая возможность построить крепкую дружбу.",
+					"compatibilityDescriptionLove" : " Совместимость располагает к идеальным отношениям, в которых обоим будет комфортно.",
+					"interestCompatibilityFriends" : 79,
+					"interestCompatibilityLove" : 92
+				},
+				{
+					"zodiacName" : "Gemini",
+					"compatibilityDescription" : " Дружба в данной паре очень сомнительна. Сблизить их может только какая-то общая заинтересованность.",
+					"compatibilityDescriptionLove" : " Слишком мало схожестей у данной пары. Отношения возможны только в том случае, если оба будут сильно хотеть их.",
+					"interestCompatibilityFriends" : 55,
+					"interestCompatibilityLove" : 60
+				},
+				{
+					"zodiacName" : "Cancer",
+					"compatibilityDescription" : " Совместимость в дружбе идеальна. Много общего и минимум различий.",
+					"compatibilityDescriptionLove" : " У этих отношений отличное будущее, очень много общего у этой пары.",
+					"interestCompatibilityFriends" : 97,
+					"interestCompatibilityLove" : 94
+				},
+				{
+					"zodiacName" : "Leo",
+					"compatibilityDescription" : " Крайне проблематично будет завязать даже приятельские отношения. Много схожестей, однако различий намного больше.",
+					"compatibilityDescriptionLove" : " Неоднозначная пара. Отношения могут быть идеальными, а могут и разрушающими.",
+					"interestCompatibilityFriends" : 37,
+					"interestCompatibilityLove" : 52
+				},
+				{
+					"zodiacName" : "Virgo",
+					"compatibilityDescription" : " Дружба вероятна на основании общего дела. Оба знака не нуждаются в друзьях, которые всегда будут рядом.",
+					"compatibilityDescriptionLove" : "  Ситуация благоприятная. Возможны стабильные и хорошие отношения",
+					"interestCompatibilityFriends" : 57,
+					"interestCompatibilityLove" : 71
+				},
+				{
+					"zodiacName" : "Libra",
+					"compatibilityDescription" : " Данной паре крайне трудно будет построить даже приятельские отношения.",
+					"compatibilityDescriptionLove" : " Отношения возможны, если оба приложат много усилий для их сохранения.",
+					"interestCompatibilityFriends" : 37,
+					"interestCompatibilityLove" : 57
+				},
+				{
+					"zodiacName" : "Scorpio",
+					"compatibilityDescription" : " Совместимость в дружбе может быть очень хорошей. Партнеры будто дополняют друг друга.",
+					"compatibilityDescriptionLove" : " Возможны отличные отношения, в которых оба будут счастливы.",
+					"interestCompatibilityFriends" : 77,
+					"interestCompatibilityLove" : 87
+				},
+				{
+					"zodiacName" : "Sagittarius",
+					"compatibilityDescription" : " Данной паре крайне трудно будет построить даже приятельские отношения.",
+					"compatibilityDescriptionLove" : " Слишком разные люди, которым трудно будет достигнуть взаимопонимания.",
+					"interestCompatibilityFriends" : 43,
+					"interestCompatibilityLove" : 47
+				},
+				{
+					"zodiacName" : "Capricorn",
+					"compatibilityDescription" : " У данной пары отличные шансы построить крепкую дружбу.",
+					"compatibilityDescriptionLove" : " Идеальная пара, идеальные отношения, идеальное взаимопонимание.",
+					"interestCompatibilityFriends" : 89,
+					"interestCompatibilityLove" : 97
+				},
+				{
+					"zodiacName" : "Aquarius",
+					"compatibilityDescription" : " Дружба у данной пары возможна, даже несмотря на много отличий.",
+					"compatibilityDescriptionLove" : " Довольно мало шансов на хорошие отношения, особенно в молодом возрасте.",
+					"interestCompatibilityFriends" : 63,
+					"interestCompatibilityLove" : 51
+				},
+				{
+					"zodiacName" : "Pisces",
+					"compatibilityDescription" : " У данной пары много общих интересов, которые могут привести к прочной дружбе.",
+					"compatibilityDescriptionLove" : " Со стороны кажется, что у этой пары мало схожестей, однако из них может выйти отличный союз.",
+					"interestCompatibilityFriends" : 88,
+					"interestCompatibilityLove" : 93
+				}
+			]
+		},
+		
+		{
+			"mainZodiac" : "Gemini",
+			"zodiacsToCompare" : [
+				{
+					"zodiacName" : "Aries",
+					"compatibilityDescription" : " Дружба будет приносить радость обоим знакам зодиака. Довольно много схожестей в характере и жизненных целях.",
+					"compatibilityDescriptionLove" : " Довольно трудно построить отношения из-за разницы темпераментов. Овен - импульсивный знак, а Близнецы - тихий и спокойный.",
+					"interestCompatibilityFriends" : 87,
+					"interestCompatibilityLove" : 51
+				},
+				{
+					"zodiacName" : "Taurus",
+					"compatibilityDescription" : " Дружба в данной паре очень сомнительна. Сблизить их может только какая-то общая заинтересованность.",
+					"compatibilityDescriptionLove" : " Слишком мало схожестей у данной пары. Отношения возможны только в том случае, если оба будут сильно хотеть их.",
+					"interestCompatibilityFriends" : 55,
+					"interestCompatibilityLove" : 60
+				},
+				{
+					"zodiacName" : "Gemini",
+					"compatibilityDescription" : " В дружбе совместимость идеальная. Этой паре никогда не будет скучно вместе.",
+					"compatibilityDescriptionLove" : " Совместимость не располагает к длительным отношения. Обоим партнёрам придётся изменить себя.",
+					"interestCompatibilityFriends" : 99,
+					"interestCompatibilityLove" : 53
+				},
+				{
+					"zodiacName" : "Cancer",
+					"compatibilityDescription" : " Дружба маловероятна, однако возможны приятельские отношения.",
+					"compatibilityDescriptionLove" : " Успешность отношений довольно сомнительна. Отношения возможны, если оба партнёра будут внимательны к особенностям друг друга.",
+					"interestCompatibilityFriends" : 57,
+					"interestCompatibilityLove" : 61
+				},
+				{
+					"zodiacName" : "Leo",
+					"compatibilityDescription" : " У данной пары все шансы построить крепкую дружбу на долгие годы.",
+					"compatibilityDescriptionLove" : " У данной пары хорошая возможность построить крепкие и гармоничные отношения.",
+					"interestCompatibilityFriends" : 87,
+					"interestCompatibilityLove" : 77
+				},
+				{
+					"zodiacName" : "Virgo",
+					"compatibilityDescription" : " Совместимость в дружбе сомнительна.",
+					"compatibilityDescriptionLove" : " Неоднозначные отношения. Если взаимного интереса не произошло на первых встречах, то лучше не продолжать отношения.",
+					"interestCompatibilityFriends" : 47,
+					"interestCompatibilityLove" : 50
+				},
+				{
+					"zodiacName" : "Libra",
+					"compatibilityDescription" : " Совместимость в дружбе почти гарантирована. Это именно те люди, которые смогут стать настоящими друзьями.",
+					"compatibilityDescriptionLove" : " Возможны длительные и крепкие отношения. Оба знака похожи друг на друга.",
+					"interestCompatibilityFriends" : 89,
+					"interestCompatibilityLove" : 87
+				},
+				{
+					"zodiacName" : "Scorpio",
+					"compatibilityDescription" : " Совместимость в дружбе не позволит этой паре стать даже приятелями.",
+					"compatibilityDescriptionLove" : " Построить отношения данной паре будет трудно, однако, приложив некоторые усилия, это окажется возможным.",
+					"interestCompatibilityFriends" : 27,
+					"interestCompatibilityLove" : 67
+				},
+				{
+					"zodiacName" : "Sagittarius",
+					"compatibilityDescription" : " Совместимость в дружбе весьма сомнительна. Они смогут стать прекрасными собеседниками или просто приятелями.",
+					"compatibilityDescriptionLove" : " У данной пары много общего и они прекрасно понимают друг друга. Есть все шансы на построения хороших отношений.",
+					"interestCompatibilityFriends" : 54,
+					"interestCompatibilityLove" : 86
+				},
+				{
+					"zodiacName" : "Capricorn",
+					"compatibilityDescription" : " У данной пары слишком мало шансов стать даже хорошими приятелями.",
+					"compatibilityDescriptionLove" : " Отношения у данной паре весьма сомнительны. На первый взгляд кажется, что это отличная пара, однако у них слишком много различий.",
+					"interestCompatibilityFriends" : 37,
+					"interestCompatibilityLove" : 57
+				},
+				{
+					"zodiacName" : "Aquarius",
+					"compatibilityDescription" : " Дружба у данных знаков - это всегда крепкий и неразрывный союз.",
+					"compatibilityDescriptionLove" : " Отличная совместимость. Каждый из партнёров будет стараться для другого.",
+					"interestCompatibilityFriends" : 89,
+					"interestCompatibilityLove" : 96
+				},
+				{
+					"zodiacName" : "Pisces",
+					"compatibilityDescription" : " У данной пары неплохие шансы создать крепкую дружбу.",
+					"compatibilityDescriptionLove" : " Союз у данной пары весьма сомнителен. Слишком много отличий.",
+					"interestCompatibilityFriends" : 87,
+					"interestCompatibilityLove" : 41
+				}
+			]
+		},
+		
+		{
+			"mainZodiac" : "Cancer",
+			"zodiacsToCompare" : [
+				{
+					"zodiacName" : "Aries",
+					"compatibilityDescription" : " В дружбе совместимость Рака и Овна довольно сомнительна. Овен слишком импульсивен для осторожного Рака. Минимум общих интересов.",
+					"compatibilityDescriptionLove" : " Довольно неплохие шансы на длительные отношения, однако возможны серьезные разногласия в финансовых вопросах.",
+					"interestCompatibilityFriends" : 43,
+					"interestCompatibilityLove" : 67
+				},
+				{
+					"zodiacName" : "Taurus",
+					"compatibilityDescription" : " Совместимость в дружбе идеальна. Много общего и минимум различий.",
+					"compatibilityDescriptionLove" : " У этих отношений отличное будущее, очень много общего у этой пары.",
+					"interestCompatibilityFriends" : 97,
+					"interestCompatibilityLove" : 94
+				},
+				{
+					"zodiacName" : "Gemini",
+					"compatibilityDescription" : " Дружба маловероятна, однако возможны приятельские отношения.",
+					"compatibilityDescriptionLove" : " Успешность отношений довольно сомнительна. Отношения возможны, если оба партнёра будут внимательны к особенностям друг друга.",
+					"interestCompatibilityFriends" : 57,
+					"interestCompatibilityLove" : 61
+				},
+				{
+					"zodiacName" : "Cancer",
+					"compatibilityDescription" : " Дружба возможно только в том случае, если обоих будет связывать общее дело или интерес.",
+					"compatibilityDescriptionLove" : " Слишком много схожестей для длительных отношений, оба знака мягкие и нерешительные.",
+					"interestCompatibilityFriends" : 57,
+					"interestCompatibilityLove" : 51
+				},
+				{
+					"zodiacName" : "Leo",
+					"compatibilityDescription" : " Нейтральная совместимость. Можно построить неплохие приятельские отношения.",
+					"compatibilityDescriptionLove" : " Одно из самых лучших сочетаний. Идеальная совместимость.",
+					"interestCompatibilityFriends" : 67,
+					"interestCompatibilityLove" : 98
+				},
+				{
+					"zodiacName" : "Virgo",
+					"compatibilityDescription" : " Очень схожие взгляды на жизнь и интересы помогут построить отличную дружбу.",
+					"compatibilityDescriptionLove" : " Совместимость располагает к построению длительных и крепких отношений.",
+					"interestCompatibilityFriends" : 95,
+					"interestCompatibilityLove" : 91
+				},
+				{
+					"zodiacName" : "Libra",
+					"compatibilityDescription" : " Данная пара может построить крепкую дружбу, очень много схожих интересов и тем для обсуждения.",
+					"compatibilityDescriptionLove" : " Хорошая совместимость. Комфортные и уютные отношения отлично подходят для данной пары.",
+					"interestCompatibilityFriends" : 92,
+					"interestCompatibilityLove" : 82
+				},
+				{
+					"zodiacName" : "Scorpio",
+					"compatibilityDescription" : " Совместимость в дружбе просто идеальная, много общих интересов и тем для разговоров.",
+					"compatibilityDescriptionLove" : " Схожие взгляды на жизнь и интересы помогут построить довольно неплохие отношения.",
+					"interestCompatibilityFriends" : 98,
+					"interestCompatibilityLove" : 72
+				},
+				{
+					"zodiacName" : "Sagittarius",
+					"compatibilityDescription" : " Отличная совместимость в дружбе. Очень много общих интересов.",
+					"compatibilityDescriptionLove" : " Есть все шансы построить хорошие отношения, если оба будут стараться понимать друг друга.",
+					"interestCompatibilityFriends" : 88,
+					"interestCompatibilityLove" : 70
+				},
+				{
+					"zodiacName" : "Capricorn",
+					"compatibilityDescription" : " Очень хорошая совместимость в дружбе, много общих интересов.",
+					"compatibilityDescriptionLove" : " Неоднозначные отношения. Различия будут помогать, но и одновременно мешать.",
+					"interestCompatibilityFriends" : 88,
+					"interestCompatibilityLove" : 68
+				},
+				{
+					"zodiacName" : "Aquarius",
+					"compatibilityDescription" : " Совместимость в дружбе весьма сомнительна, не смотря на наличие общих интересов.",
+					"compatibilityDescriptionLove" : " Непредсказуемые отношения, в которых только сильное желание быть вместе поможет построить крепкий союз.",
+					"interestCompatibilityFriends" : 59,
+					"interestCompatibilityLove" : 58
+				},
+				{
+					"zodiacName" : "Pisces",
+					"compatibilityDescription" : " Идеальная совместимость. Этим людям никогда не будет скучно друг с другом.",
+					"compatibilityDescriptionLove" : " Совместимость очень велика. Это союз людей, которые похожи как две капли воды.",
+					"interestCompatibilityFriends" : 92,
+					"interestCompatibilityLove" : 88
+				}
+			]
+		},
+		
+		{
+			"mainZodiac" : "Leo",
+			"zodiacsToCompare" : [
+				{
+					"zodiacName" : "Aries",
+					"compatibilityDescription" : " Отличная совместимость в дружбе. Полное понимание и общие интересы. Однако, если Овен научится быть более сдержанным.",
+					"compatibilityDescriptionLove" : "  Неплохая совместимость. Но только в том случае, если Овен сможет контролировать свои эмоции.",
+					"interestCompatibilityFriends" : 68,
+					"interestCompatibilityLove" : 57
+				},
+				{
+					"zodiacName" : "Taurus",
+					"compatibilityDescription" : " Крайне проблематично будет завязать даже приятельские отношения. Много схожестей, однако различий намного больше.",
+					"compatibilityDescriptionLove" : " Неоднозначная пара. Отношения могут быть идеальными, а могут и разрушающими.",
+					"interestCompatibilityFriends" : 37,
+					"interestCompatibilityLove" : 52
+				},
+				{
+					"zodiacName" : "Gemini",
+					"compatibilityDescription" : " У данной пары все шансы построить крепкую дружбу на долгие годы.",
+					"compatibilityDescriptionLove" : " У данной пары хорошая возможность построить крепкие и гармоничные отношения.",
+					"interestCompatibilityFriends" : 87,
+					"interestCompatibilityLove" : 77
+				},
+				{
+					"zodiacName" : "Cancer",
+					"compatibilityDescription" : " Нейтральная совместимость. Можно построить неплохие приятельские отношения.",
+					"compatibilityDescriptionLove" : " Одно из самых лучших сочетаний. Идеальная совместимость.",
+					"interestCompatibilityFriends" : 67,
+					"interestCompatibilityLove" : 98
+				},
+				{
+					"zodiacName" : "Leo",
+					"compatibilityDescription" : " Данной паре трудно будет стать даже приятелями.",
+					"compatibilityDescriptionLove" : " Двум лидерам трудно построить отношения, однако это возможно, если оба будут прислушиваться друг к другу.",
+					"interestCompatibilityFriends" : 38,
+					"interestCompatibilityLove" : 58
+				},
+				{
+					"zodiacName" : "Virgo",
+					"compatibilityDescription" : " Совместимость не располагает даже к созданию приятельских отношений.",
+					"compatibilityDescriptionLove" : " Пара очень благоприятная. Отношения будут приносить радость обоим.",
+					"interestCompatibilityFriends" : 43,
+					"interestCompatibilityLove" : 87
+				},
+				{
+					"zodiacName" : "Libra",
+					"compatibilityDescription" : " Идеальная совместимость. Есть все шансы стать настоящими друзьями.",
+					"compatibilityDescriptionLove" : " Есть все основания полагать, что у данной пары будут крепкие и гармоничные отношения.",
+					"interestCompatibilityFriends" : 92,
+					"interestCompatibilityLove" : 89
+				},
+				{
+					"zodiacName" : "Scorpio",
+					"compatibilityDescription" : " Дружба сомнительна. Много общих черт, однако лидерство у обоих сильно мешает.",
+					"compatibilityDescriptionLove" : " Возможны неплохие отношения, если отношения начнутся с какого-либо общего дела.",
+					"interestCompatibilityFriends" : 48,
+					"interestCompatibilityLove" : 76
+				},
+				{
+					"zodiacName" : "Sagittarius",
+					"compatibilityDescription" : " Совместимость в дружбе позволит стать настоящими друзьями.",
+					"compatibilityDescriptionLove" : " Большие шансы на построение гармоничных, длительных и приятных отношений.",
+					"interestCompatibilityFriends" : 85,
+					"interestCompatibilityLove" : 94
+				},
+				{
+					"zodiacName" : "Capricorn",
+					"compatibilityDescription" : " Совместимость не позволит стать даже приятелями.",
+					"compatibilityDescriptionLove" : " Данная пара может быть как идеальной, так и ужасной. Зависит от желания обоих быть вместе.",
+					"interestCompatibilityFriends" : 32,
+					"interestCompatibilityLove" : 78
+				},
+				{
+					"zodiacName" : "Aquarius",
+					"compatibilityDescription" : " Дружба будет складываться довольно тяжело, так как оба будут видеть друг в друге конкурентов.",
+					"compatibilityDescriptionLove" : " Довольно напряженные отношения, построить крепкий союз довольно трудно.",
+					"interestCompatibilityFriends" : 48,
+					"interestCompatibilityLove" : 62
+				},
+				{
+					"zodiacName" : "Pisces",
+					"compatibilityDescription" : " Дружба у данной пары может сложиться очень удачно. Много общих интересов и общие цели.",
+					"compatibilityDescriptionLove" : " Довольно непростые отношения ожидают данную пару, хотя со стороны будет казаться, что всё идеально.",
+					"interestCompatibilityFriends" : 88,
+					"interestCompatibilityLove" : 58
+				}
+			]
+		},
+		
+		{
+			"mainZodiac" : "Virgo",
+			"zodiacsToCompare" : [
+				{
+					"zodiacName" : "Aries",
+					"compatibilityDescription" : " Плохая совместимость как в дружбе, так и в отношениях. Активный и эмоциональный Овен просто не сможет уживаться с консерватором Девой.",
+					"compatibilityDescriptionLove" : " Плохая совместимость, полное непонимание друг друга.",
+					"interestCompatibilityFriends" : 32,
+					"interestCompatibilityLove" : 27
+				},
+				{
+					"zodiacName" : "Taurus",
+					"compatibilityDescription" : " Дружба вероятна на основании общего дела. Оба знака не нуждаются в друзьях, которые всегда будут рядом.",
+					"compatibilityDescriptionLove" : "  Ситуация благоприятная. Возможны стабильные и хорошие отношения",
+					"interestCompatibilityFriends" : 57,
+					"interestCompatibilityLove" : 71
+				},
+				{
+					"zodiacName" : "Gemini",
+					"compatibilityDescription" : " Совместимость в дружбе сомнительна.",
+					"compatibilityDescriptionLove" : " Неоднозначные отношения. Если взаимного интереса не произошло на первых встречах, то лучше не продолжать отношения.",
+					"interestCompatibilityFriends" : 47,
+					"interestCompatibilityLove" : 50
+				},
+				{
+					"zodiacName" : "Cancer",
+					"compatibilityDescription" : " Очень схожие взгляды на жизнь и интересы помогут построить отличную дружбу.",
+					"compatibilityDescriptionLove" : " Совместимость располагает к построению длительных и крепких отношений.",
+					"interestCompatibilityFriends" : 95,
+					"interestCompatibilityLove" : 91
+				},
+				{
+					"zodiacName" : "Leo",
+					"compatibilityDescription" : " Совместимость не располагает даже к созданию приятельских отношений.",
+					"compatibilityDescriptionLove" : " Пара очень благоприятная. Отношения будут приносить радость обоим.",
+					"interestCompatibilityFriends" : 43,
+					"interestCompatibilityLove" : 87
+				},
+				{
+					"zodiacName" : "Virgo",
+					"compatibilityDescription" : " У данной пары все шансы стать настоящими друзьями на всю жизнь.",
+					"compatibilityDescriptionLove" : " Совместимость располагает к успешному построению отношений.",
+					"interestCompatibilityFriends" : 89,
+					"interestCompatibilityLove" : 72
+				},
+				{
+					"zodiacName" : "Libra",
+					"compatibilityDescription" : " Совместимость не располагает к крепкой дружбе по интересам.",
+					"compatibilityDescriptionLove" : " Можно построить отношения, однако темпераменты сильно отличаются.",
+					"interestCompatibilityFriends" : 43,
+					"interestCompatibilityLove" : 62
+				},
+				{
+					"zodiacName" : "Scorpio",
+					"compatibilityDescription" : " Есть все шансы на построение крепкой дружбы.",
+					"compatibilityDescriptionLove" : " Хорошая совместимость, если оба будут стараться меньше критиковать друг друга.",
+					"interestCompatibilityFriends" : 74,
+					"interestCompatibilityLove" : 72
+				},
+				{
+					"zodiacName" : "Sagittarius",
+					"compatibilityDescription" : " Совместимость не располагает даже к построению приятельских отношений. Слишком разные личности.",
+					"compatibilityDescriptionLove" : " Отношения возможно, только если оба будут идти на компромиссы и уступки.",
+					"interestCompatibilityFriends" : 27,
+					"interestCompatibilityLove" : 53
+				},
+				{
+					"zodiacName" : "Capricorn",
+					"compatibilityDescription" : " Совместимость в дружбе позволит стать настоящими друзьями.",
+					"compatibilityDescriptionLove" : " Есть все шансы построить неплохие отншения, однако одному из пары придется переступить через себя и стать более заботливым.",
+					"interestCompatibilityFriends" : 88,
+					"interestCompatibilityLove" : 72
+				},
+				{
+					"zodiacName" : "Aquarius",
+					"compatibilityDescription" : " У данной пары очень мало шансов стать друзьями, слишком мало общих интересов.",
+					"compatibilityDescriptionLove" : " Неоднозначные отношения, вступая в которые, оба сильно рискуют, так как слишком много различий в данной паре.",
+					"interestCompatibilityFriends" : 43,
+					"interestCompatibilityLove" : 52
+				},
+				{
+					"zodiacName" : "Pisces",
+					"compatibilityDescription" : " Дружба у данной пары вряд ли сложится. Слишком разный спектр интересов.",
+					"compatibilityDescriptionLove" : " Довольно интересный союз. Очень разные люди, однако именно это и привлекает их друг в друге.",
+					"interestCompatibilityFriends" : 43,
+					"interestCompatibilityLove" : 72
+				}
+			]
+		},
+		
+		{
+			"mainZodiac" : "Libra",
+			"zodiacsToCompare" : [
+				{
+					"zodiacName" : "Aries",
+					"compatibilityDescription" : " Этим знакам зодиака крайне трудно стать даже приятелями из-за огромной разницы в темпераментах.",
+					"compatibilityDescriptionLove" : "  Пара имеет все шансы на длительные отношения.",
+					"interestCompatibilityFriends" : 32,
+					"interestCompatibilityLove" : 57
+				},
+				{
+					"zodiacName" : "Taurus",
+					"compatibilityDescription" : " Данной паре крайне трудно будет построить даже приятельские отношения.",
+					"compatibilityDescriptionLove" : " Отношения возможны, если оба приложат много усилий для их сохранения.",
+					"interestCompatibilityFriends" : 37,
+					"interestCompatibilityLove" : 57
+				},
+				{
+					"zodiacName" : "Gemini",
+					"compatibilityDescription" : " Совместимость в дружбе почти гарантирована. Это именно те люди, которые смогут стать настоящими друзьями.",
+					"compatibilityDescriptionLove" : " Возможны длительные и крепкие отношения. Оба знака похожи друг на друга.",
+					"interestCompatibilityFriends" : 89,
+					"interestCompatibilityLove" : 87
+				},
+				{
+					"zodiacName" : "Cancer",
+					"compatibilityDescription" : " Данная пара может построить крепкую дружбу, очень много схожих интересов и тем для обсуждения.",
+					"compatibilityDescriptionLove" : " Хорошая совместимость. Комфортные и уютные отношения отлично подходят для данной пары.",
+					"interestCompatibilityFriends" : 92,
+					"interestCompatibilityLove" : 82
+				},
+				{
+					"zodiacName" : "Leo",
+					"compatibilityDescription" : " Идеальная совместимость. Есть все шансы стать настоящими друзьями.",
+					"compatibilityDescriptionLove" : " Есть все основания полагать, что у данной пары будут крепкие и гармоничные отношения.",
+					"interestCompatibilityFriends" : 92,
+					"interestCompatibilityLove" : 89
+				},
+				{
+					"zodiacName" : "Virgo",
+					"compatibilityDescription" : " Совместимость не располагает к крепкой дружбе по интересам.",
+					"compatibilityDescriptionLove" : " Можно построить отношения, однако темпераменты сильно отличаются.",
+					"interestCompatibilityFriends" : 42,
+					"interestCompatibilityLove" : 62
+				},
+				{
+					"zodiacName" : "Libra",
+					"compatibilityDescription" : " Все шансы на построение крепкой дружбы на долгие годы.",
+					"compatibilityDescriptionLove" : " Совместимость будет складываться наилучшим образом, оба готовы идти на компромиссы и уступки.",
+					"interestCompatibilityFriends" : 92,
+					"interestCompatibilityLove" : 91
+				},
+				{
+					"zodiacName" : "Scorpio",
+					"compatibilityDescription" : " Совместимость в дружбе весьма сомнительна.",
+					"compatibilityDescriptionLove" : " Слишком разные люди. Для построения крепких отношений данной паре придется многое в себе изменить.",
+					"interestCompatibilityFriends" : 52,
+					"interestCompatibilityLove" : 58
+				},
+				{
+					"zodiacName" : "Sagittarius",
+					"compatibilityDescription" : " Возможна довольно неплохая дружба у данной пары.",
+					"compatibilityDescriptionLove" : " Очень хорошая совместимость в любви. Данная пара может понимать друг друга без слов.",
+					"interestCompatibilityFriends" : 68,
+					"interestCompatibilityLove" : 92
+				},
+				{
+					"zodiacName" : "Capricorn",
+					"compatibilityDescription" : " У данной пары маловероятна длительная дружба.",
+					"compatibilityDescriptionLove" : " Отношения в данной паре будут похожи на американские горки. Слишком разные взгляды на жизнь.",
+					"interestCompatibilityFriends" : 54,
+					"interestCompatibilityLove" : 42
+				},
+				{
+					"zodiacName" : "Aquarius",
+					"compatibilityDescription" : " У данной пары может получиться очень неплохая дружба, построенная на общих интересах.",
+					"compatibilityDescriptionLove" : " Отношения у данной пары возможны, особенно хорошо будет в интеллектуальном плане.",
+					"interestCompatibilityFriends" : 82,
+					"interestCompatibilityLove" : 62
+				},
+				{
+					"zodiacName" : "Pisces",
+					"compatibilityDescription" : " Дружба весьма вероятна. Всегда будут темы для разговоров.",
+					"compatibilityDescriptionLove" : " В данных отношения обоим партнерам будет чего-то не хватать. Это помешает построить длительные отношения.",
+					"interestCompatibilityFriends" : 72,
+					"interestCompatibilityLove" : 53
+				}
+			]
+		},
+		
+		{
+			"mainZodiac" : "Scorpio",
+			"zodiacsToCompare" : [
+				{
+					"zodiacName" : "Aries",
+					"compatibilityDescription" : " Отличные шансы на крепкую дружбу. Оба знака упрямые, дерзкие и всегда знают, что ответить.",
+					"compatibilityDescriptionLove" : " Трудно предсказать развитие отношений у такой пары. Они могут быть, как идеальными, так и ужасными.",
+					"interestCompatibilityFriends" : 77,
+					"interestCompatibilityLove" : 50
+				},
+				{
+					"zodiacName" : "Taurus",
+					"compatibilityDescription" : " Совместимость в дружбе может быть очень хорошей. Партнеры будто дополняют друг друга.",
+					"compatibilityDescriptionLove" : " Возможны отличные отношения, в которых оба будут счастливы.",
+					"interestCompatibilityFriends" : 77,
+					"interestCompatibilityLove" : 87
+				},
+				{
+					"zodiacName" : "Gemini",
+					"compatibilityDescription" : " Совместимость в дружбе не позволит этой паре стать даже приятелями.",
+					"compatibilityDescriptionLove" : " Построить отношения данной паре будет трудно, однако, приложив некоторые усилия, это окажется возможным.",
+					"interestCompatibilityFriends" : 27,
+					"interestCompatibilityLove" : 67
+				},
+				{
+					"zodiacName" : "Cancer",
+					"compatibilityDescription" : " Совместимость в дружбе просто идеальная, много общих интересов и тем для разговоров.",
+					"compatibilityDescriptionLove" : " Схожие взгляды на жизнь и интересы помогут построить довольно неплохие отношения.",
+					"interestCompatibilityFriends" : 98,
+					"interestCompatibilityLove" : 72
+				},
+				{
+					"zodiacName" : "Leo",
+					"compatibilityDescription" : " Дружба сомнительна. Много общих черт, однако лидерство у обоих сильно мешает.",
+					"compatibilityDescriptionLove" : " Возможны неплохие отношения, если отношения начнутся с какого-либо общего дела.",
+					"interestCompatibilityFriends" : 48,
+					"interestCompatibilityLove" : 76
+				},
+				{
+					"zodiacName" : "Virgo",
+					"compatibilityDescription" : " Есть все шансы на построение крепкой дружбы.",
+					"compatibilityDescriptionLove" : " Хорошая совместимость, если оба будут стараться меньше критиковать друг друга.",
+					"interestCompatibilityFriends" : 74,
+					"interestCompatibilityLove" : 72
+				},
+				{
+					"zodiacName" : "Libra",
+					"compatibilityDescription" : " Совместимость в дружбе весьма сомнительна.",
+					"compatibilityDescriptionLove" : " Слишком разные люди. Для построения крепких отношений данной паре придется многое в себе изменить.",
+					"interestCompatibilityFriends" : 52,
+					"interestCompatibilityLove" : 58
+				},
+				{
+					"zodiacName" : "Scorpio",
+					"compatibilityDescription" : " Дружба маловероятна. Двум сложным знакам трудно общаться.",
+					"compatibilityDescriptionLove" : " Крайне сложно построить отношения данной паре. Жизнь как на вулкане.",
+					"interestCompatibilityFriends" : 49,
+					"interestCompatibilityLove" : 48
+				},
+				{
+					"zodiacName" : "Sagittarius",
+					"compatibilityDescription" : " Дружба маловероятна. Слишком разные интересы.",
+					"compatibilityDescriptionLove" : " Отличные возможности построить крепкие и длительные отношения.",
+					"interestCompatibilityFriends" : 48,
+					"interestCompatibilityLove" : 92
+				},
+				{
+					"zodiacName" : "Capricorn",
+					"compatibilityDescription" : " Совместимость в дружбе позволит данной паре стать настоящими друзьями.",
+					"compatibilityDescriptionLove" : " Есть большой шанс на построение хороших отношений. Для этого данной паре потребуется много терпения и понимания.",
+					"interestCompatibilityFriends" : 88,
+					"interestCompatibilityLove" : 72
+				},
+				{
+					"zodiacName" : "Aquarius",
+					"compatibilityDescription" : " У данной пары получится стать друзьями, если у них будут общие интересы в работе или науке.",
+					"compatibilityDescriptionLove" : " Очень неоднозначный союз. Возможны как крепкие отношения, так и полный крах.",
+					"interestCompatibilityFriends" : 52,
+					"interestCompatibilityLove" : 58
+				},
+				{
+					"zodiacName" : "Pisces",
+					"compatibilityDescription" : " Несмотря на много схожестей, дружба у данной пары маловероятна.",
+					"compatibilityDescriptionLove" : " Есть большой шанс построить крепкие отношения. Оба знака очень похожи.",
+					"interestCompatibilityFriends" : 58,
+					"interestCompatibilityLove" : 78
+				}
+			]
+		},
+		
+		{
+			"mainZodiac" : "Sagittarius",
+			"zodiacsToCompare" : [
+				{
+					"zodiacName" : "Aries",
+					"compatibilityDescription" : " Отличные шансы стать настоящими друзьями. Они отлично понимают друг друга, что даст шанс проводить часы напролет вместе.",
+					"compatibilityDescriptionLove" : " Большой шанс на построение длительных отношений. У данных знаков много общего, что позволит им понимать друг друга намного лучше. ",
+					"interestCompatibilityFriends" : 84,
+					"interestCompatibilityLove" : 73
+				},
+				{
+					"zodiacName" : "Taurus",
+					"compatibilityDescription" : " Данной паре крайне трудно будет построить даже приятельские отношения.",
+					"compatibilityDescriptionLove" : " Слишком разные люди, которым трудно будет достигнуть взаимопонимания.",
+					"interestCompatibilityFriends" : 83,
+					"interestCompatibilityLove" : 47
+				},
+				{
+					"zodiacName" : "Gemini",
+					"compatibilityDescription" : " Совместимость в дружбе весьма сомнительна. Они смогут стать прекрасными собеседниками или просто приятелями.",
+					"compatibilityDescriptionLove" : " У данной пары много общего и они прекрасно понимают друг друга. Есть все шансы на построения хороших отношений.",
+					"interestCompatibilityFriends" : 54,
+					"interestCompatibilityLove" : 86
+				},
+				{
+					"zodiacName" : "Cancer",
+					"compatibilityDescription" : " Отличная совместимость в дружбе. Очень много общих интересов.",
+					"compatibilityDescriptionLove" : " Есть все шансы построить хорошие отношения, если оба будут стараться понимать друг друга.",
+					"interestCompatibilityFriends" : 88,
+					"interestCompatibilityLove" : 70
+				},
+				{
+					"zodiacName" : "Leo",
+					"compatibilityDescription" : " Совместимость в дружбе позволит стать настоящими друзьями.",
+					"compatibilityDescriptionLove" : " Большие шансы на построение гармоничных, длительных и приятных отношений.",
+					"interestCompatibilityFriends" : 85,
+					"interestCompatibilityLove" : 94
+				},
+				{
+					"zodiacName" : "Virgo",
+					"compatibilityDescription" : " Совместимость не располагает даже к построению приятельских отношений. Слишком разные личности.",
+					"compatibilityDescriptionLove" : " Отношения возможно, только если оба будут идти на компромиссы и уступки.",
+					"interestCompatibilityFriends" : 27,
+					"interestCompatibilityLove" : 53
+				},
+				{
+					"zodiacName" : "Libra",
+					"compatibilityDescription" : " Возможна довольно неплохая дружба у данной пары.",
+					"compatibilityDescriptionLove" : " Очень хорошая совместимость в любви. Данная пара может понимать друг друга без слов.",
+					"interestCompatibilityFriends" : 68,
+					"interestCompatibilityLove" : 92
+				},
+				{
+					"zodiacName" : "Scorpio",
+					"compatibilityDescription" : " Дружба маловероятна. Слишком разные интересы.",
+					"compatibilityDescriptionLove" : " Отличные возможности построить крепкие и длительные отношения.",
+					"interestCompatibilityFriends" : 48,
+					"interestCompatibilityLove" : 90
+				},
+				{
+					"zodiacName" : "Sagittarius",
+					"compatibilityDescription" : " Совместимость в дружбе даёт все шансы стать лучшими друзьями.",
+					"compatibilityDescriptionLove" : " Отличные отношения основанные на полном понимании друг друга.",
+					"interestCompatibilityFriends" : 94,
+					"interestCompatibilityLove" : 92
+				},
+				{
+					"zodiacName" : "Capricorn",
+					"compatibilityDescription" : " Слишком мало общего для построения дружеских отношений.",
+					"compatibilityDescriptionLove" : " Слишком трудно построить отношения, в которых оба не очень интересны друг другу.",
+					"interestCompatibilityFriends" : 48,
+					"interestCompatibilityLove" : 42
+				},
+				{
+					"zodiacName" : "Aquarius",
+					"compatibilityDescription" : " В дружбе данная пара идеально подходит друг другу.",
+					"compatibilityDescriptionLove" : " Возможны идеальные отношения. Это союз людей, которые полностью понимают друг друга.",
+					"interestCompatibilityFriends" : 98,
+					"interestCompatibilityLove" : 92
+				},
+				{
+					"zodiacName" : "Pisces",
+					"compatibilityDescription" : " У данной пары очень много общего, что поможет им создать крепкую дружбу.",
+					"compatibilityDescriptionLove" : " Могут получиться хорошие отношения, если оба не будут слишком сильно ограничивать свободу друг друга.",
+					"interestCompatibilityFriends" : 93,
+					"interestCompatibilityLove" : 82
+				}
+			]
+		},
+		
+		{
+			"mainZodiac" : "Capricorn",
+			"zodiacsToCompare" : [
+				{
+					"zodiacName" : "Aries",
+					"compatibilityDescription" : " Совместимость в дружбе не будет идеальной. Данные знаки нуждаются  в друзьях, которые подобны им самим.",
+					"compatibilityDescriptionLove" : " Неплохие шансы на построение гармоничных отношений, несмотря на множество отличий.",
+					"interestCompatibilityFriends" : 54,
+					"interestCompatibilityLove" : 58
+				},
+				{
+					"zodiacName" : "Taurus",
+					"compatibilityDescription" : " У данной пары отличные шансы построить крепкую дружбу.",
+					"compatibilityDescriptionLove" : " Идеальная пара, идеальные отношения, идеальное взаимопонимание.",
+					"interestCompatibilityFriends" : 89,
+					"interestCompatibilityLove" : 97
+				},
+				{
+					"zodiacName" : "Gemini",
+					"compatibilityDescription" : " У данной пары отличные шансы построить крепкую дружбу.",
+					"compatibilityDescriptionLove" : " Идеальная пара, идеальные отношения, идеальное взаимопонимание.",
+					"interestCompatibilityFriends" : 89,
+					"interestCompatibilityLove" : 97
+				},
+				{
+					"zodiacName" : "Cancer",
+					"compatibilityDescription" : " Очень хорошая совместимость в дружбе, много общих интересов.",
+					"compatibilityDescriptionLove" : " Неоднозначные отношения. Различия будут помогать, но и одновременно мешать.",
+					"interestCompatibilityFriends" : 88,
+					"interestCompatibilityLove" : 68
+				},
+				{
+					"zodiacName" : "Leo",
+					"compatibilityDescription" : " Совместимость не позволит стать даже приятелями.",
+					"compatibilityDescriptionLove" : " Данная пара может быть как идеальной, так и ужасной. Зависит от желания обоих быть вместе.",
+					"interestCompatibilityFriends" : 32,
+					"interestCompatibilityLove" : 71
+				},
+				{
+					"zodiacName" : "Virgo",
+					"compatibilityDescription" : " Совместимость в дружбе позволит стать настоящими друзьями.",
+					"compatibilityDescriptionLove" : " Есть все шансы построить неплохие отношения, однако одному из пары придется переступить через себя и стать более заботливым.",
+					"interestCompatibilityFriends" : 88,
+					"interestCompatibilityLove" : 72
+				},
+				{
+					"zodiacName" : "Libra",
+					"compatibilityDescription" : " У данной пары маловероятна длительная дружба.",
+					"compatibilityDescriptionLove" : " Отношения в данной паре будут похожи на американские горки. Слишком разные взгляды на жизнь.",
+					"interestCompatibilityFriends" : 54,
+					"interestCompatibilityLove" : 42
+				},
+				{
+					"zodiacName" : "Scorpio",
+					"compatibilityDescription" : " Совместимость в дружбе позволит данной паре стать настоящими друзьями.",
+					"compatibilityDescriptionLove" : " Есть большой шанс на построение хороших отношений. Для этого данной паре потребуется много терпения и понимания.",
+					"interestCompatibilityFriends" : 88,
+					"interestCompatibilityLove" : 72
+				},
+				{
+					"zodiacName" : "Sagittarius",
+					"compatibilityDescription" : " Слишком мало общего для построения дружеских отношений.",
+					"compatibilityDescriptionLove" : " Слишком трудно построить отношения, в которых оба не очень интересны друг другу.",
+					"interestCompatibilityFriends" : 48,
+					"interestCompatibilityLove" : 42
+				},
+				{
+					"zodiacName" : "Capricorn",
+					"compatibilityDescription" : " Совместимость в дружбе очень велика, благодаря полному взаимопониманию.",
+					"compatibilityDescriptionLove" : " Отличные шансы на отношения, в которых будет очень много взаимопонимания.",
+					"interestCompatibilityFriends" : 83,
+					"interestCompatibilityLove" : 86
+
+				},
+				{
+					"zodiacName" : "Aquarius",
+					"compatibilityDescription" : " Из данной пары могут выйти отличные друзья, если оба будут стараться меньше спорить.",
+					"compatibilityDescriptionLove" : " Данной паре гораздо лучше строить дружеские отношения, недели романтические.",
+					"interestCompatibilityFriends" : 62,
+					"interestCompatibilityLove" : 52
+				},
+				{
+					"zodiacName" : "Pisces",
+					"compatibilityDescription" : " Дружба может быть основана на общих взглядах на мир.",
+					"compatibilityDescriptionLove" : " У данной пары может получиться создать очень гармоничный союз.",
+					"interestCompatibilityFriends" : 75,
+					"interestCompatibilityLove" : 68
+				}
+			]
+		},
+		
+		{
+			"mainZodiac" : "Aquarius",
+			"zodiacsToCompare" : [
+				{
+					"zodiacName" : "Aries",
+					"compatibilityDescription" : " У данной пары отличные шансы на хорошую, долгую дружбу.",
+					"compatibilityDescriptionLove" : " У данной пары отличные шансы построить хорошие отношения. Оба готовы к новым экспериментам в жизни и в отношениях.",
+					"interestCompatibilityFriends" : 77,
+					"interestCompatibilityLove" : 78
+				},
+				{
+					"zodiacName" : "Taurus",
+					"compatibilityDescription" : " Дружба у данной пары возможна, даже несмотря на много отличий.",
+					"compatibilityDescriptionLove" : " Довольно мало шансов на хорошие отношения, особенно в молодом возрасте.",
+					"interestCompatibilityFriends" : 63,
+					"interestCompatibilityLove" : 51
+				},
+				{
+					"zodiacName" : "Gemini",
+					"compatibilityDescription" : " Дружба у данной пары возможна, даже несмотря на много отличий.",
+					"compatibilityDescriptionLove" : " Довольно мало шансов на хорошие отношения, особенно в молодом возрасте.",
+					"interestCompatibilityFriends" : 63,
+					"interestCompatibilityLove" : 51
+				},
+				{
+					"zodiacName" : "Cancer",
+					"compatibilityDescription" : " Совместимость в дружбе весьма сомнительна, не смотря на наличие общих интересов.",
+					"compatibilityDescriptionLove" : " Непредсказуемые отношения, в которых только сильное желание быть вместе поможет построить крепкий союз.",
+					"interestCompatibilityFriends" : 59,
+					"interestCompatibilityLove" : 58
+				},
+				{
+					"zodiacName" : "Leo",
+					"compatibilityDescription" : " Дружба будет складываться довольно тяжело, так как оба будут видеть друг в друге конкурентов.",
+					"compatibilityDescriptionLove" : " Довольно напряженные отношения, построить крепкий союз довольно трудно.",
+					"interestCompatibilityFriends" : 48,
+					"interestCompatibilityLove" : 62
+				},
+				{
+					"zodiacName" : "Virgo",
+					"compatibilityDescription" : " У данной пары очень мало шансов стать друзьями, слишком мало общих интересов.",
+					"compatibilityDescriptionLove" : " Неоднозначные отношения, вступая в которые, оба сильно рискуют, так как слишком много различий в данной паре.",
+					"interestCompatibilityFriends" : 42,
+					"interestCompatibilityLove" : 52
+
+				},
+				{
+					"zodiacName" : "Libra",
+					"compatibilityDescription" : " У данной пары может получиться очень неплохая дружба, построенная на общих интересах.",
+					"compatibilityDescriptionLove" : " Отношения у данной пары возможны, особенно хорошо будет в интеллектуальном плане.",
+					"interestCompatibilityFriends" : 83,
+					"interestCompatibilityLove" : 62
+				},
+				{
+					"zodiacName" : "Scorpio",
+					"compatibilityDescription" : " У данной пары получится стать друзьями, если у них будут общие интересы в работе или науке.",
+					"compatibilityDescriptionLove" : " Очень неоднозначный союз. Возможны как крепкие отншения, так и полный крах.",
+					"interestCompatibilityFriends" : 53,
+					"interestCompatibilityLove" : 58
+				},
+				{
+					"zodiacName" : "Sagittarius",
+					"compatibilityDescription" : " В дружбе данная пара идеально подходит друг другу.",
+					"compatibilityDescriptionLove" : " Возможны идеальные отношения. Это союз людей, которые полностью понимают друг друга.",
+					"interestCompatibilityFriends" : 98,
+					"interestCompatibilityLove" : 92
+				},
+				{
+					"zodiacName" : "Capricorn",
+					"compatibilityDescription" : " Из данной пары могут выйти отличные друзья, если оба будут стараться меньше спорить.",
+					"compatibilityDescriptionLove" : " Данной паре гораздо лучше строить дружеские отношения, недели романтические.",
+					"interestCompatibilityFriends" : 62,
+					"interestCompatibilityLove" : 52
+				},
+				{
+					"zodiacName" : "Aquarius",
+					"compatibilityDescription" : " У данной пары могут выйти хорошие дружеские отношения. Они всегда найдут о чем поговорить.",
+					"compatibilityDescriptionLove" : " У данной пары могут получиться неплохие отношения, оба достаточно свободолюбивы.",
+					"interestCompatibilityFriends" : 84,
+					"interestCompatibilityLove" : 78
+				},
+				{
+					"zodiacName" : "Pisces",
+					"compatibilityDescription" : " Дружба у данной пары возможна, если будет какой-либо общий интерес.",
+					"compatibilityDescriptionLove" : " У данной пары мало шансов на создание отношений из-за слишком больших различий между ними.",
+					"interestCompatibilityFriends" : 52,
+					"interestCompatibilityLove" : 38
+				}
+			]
+		},
+		
+		{
+			"mainZodiac" : "Pisces",
+			"zodiacsToCompare" : [
+				{
+					"zodiacName" : "Aries",
+					"compatibilityDescription" : " Дружба в этой паре маловероятна, слишком разные темпераменты, потребности и темы для разговоров.",
+					"compatibilityDescriptionLove" : " Очень сложные отношения, в которых партнёрам будет трудно понять друг друга.",
+					"interestCompatibilityFriends" : 47,
+					"interestCompatibilityLove" : 42
+				},
+				{
+					"zodiacName" : "Taurus",
+					"compatibilityDescription" : " У данной пары много общих интересов, которые могут привести к прочной дружбе.",
+					"compatibilityDescriptionLove" : " Со стороны кажется, что у этой пары мало схожестей, однако из них может выйти отличный союз.",
+					"interestCompatibilityFriends" : 88,
+					"interestCompatibilityLove" : 93
+				},
+				{
+					"zodiacName" : "Gemini",
+					"compatibilityDescription" : " У данной пары неплохие шансы создать крепкую дружбу.",
+					"compatibilityDescriptionLove" : " Союз у данной пары весьма сомнителен. Слишком много отличий.",
+					"interestCompatibilityFriends" : 87,
+					"interestCompatibilityLove" : 41
+				},
+				{
+					"zodiacName" : "Cancer",
+					"compatibilityDescription" : " Идеальная совместимость. Этим людям никогда не будет скучно друг с другом.",
+					"compatibilityDescriptionLove" : " Совместимость очень велика. Это союз людей, которые похожи как две капли воды.",
+					"interestCompatibilityFriends" : 92,
+					"interestCompatibilityLove" : 88
+				},
+				{
+					"zodiacName" : "Leo",
+					"compatibilityDescription" : " Дружба в этой паре маловероятна, слишком разные темпераменты, потребности и темы для разговоров.",
+					"compatibilityDescriptionLove" : " Очень сложные отношения, в которых партнёрам будет трудно понять друг друга. ",
+					"interestCompatibilityFriends" : 83,
+					"interestCompatibilityLove" : 78
+				},
+				{
+					"zodiacName" : "Virgo",
+					"compatibilityDescription" : " Дружба у данной пары вряд ли сложится. Слишком разный спектр интересов.",
+					"compatibilityDescriptionLove" : " Довольно интересный союз. Очень разные люди, однако именно это и привлекает их друг в друге.",
+					"interestCompatibilityFriends" : 42,
+					"interestCompatibilityLove" : 72
+				},
+				{
+					"zodiacName" : "Libra",
+					"compatibilityDescription" : " Дружба весьма вероятна. Всегда будут темы для разговоров.",
+					"compatibilityDescriptionLove" : " В данных отношения обоим партнерам будет чего-то не хватать. Это помешает построить длительные отношения.",
+					"interestCompatibilityFriends" : 72,
+					"interestCompatibilityLove" : 53
+				},
+				{
+					"zodiacName" : "Scorpio",
+					"compatibilityDescription" : " Несмотря на много схожестей, дружба у данной пары маловероятна.",
+					"compatibilityDescriptionLove" : " Есть большой шанс построить крепкие отношения. Оба знака очень похожи.",
+					"interestCompatibilityFriends" : 58,
+					"interestCompatibilityLove" : 78
+					
+				},
+				{
+					"zodiacName" : "Sagittarius",
+					"compatibilityDescription" : " У данной пары очень много общего, что поможет им создать крепкую дружбу.",
+					"compatibilityDescriptionLove" : " Могут получиться хорошие отношения, если оба не будут слишком сильно ограничивать свободу друг друга.",
+					"interestCompatibilityFriends" : 93,
+					"interestCompatibilityLove" : 82
+				},
+				{
+					"zodiacName" : "Capricorn",
+					"compatibilityDescription" : " Дружба может быть основана на общих взглядах на мир.",
+					"compatibilityDescriptionLove" : " У данной пары может получиться создать очень гармоничный союз.",
+					"interestCompatibilityFriends" : 75,
+					"interestCompatibilityLove" : 68
+				},
+				{
+					"zodiacName" : "Aquarius",
+					"compatibilityDescription" : " Дружба у данной пары возможна, если будет какой-либо общий интерес.",
+					"compatibilityDescriptionLove" : " У данной пары мало шансов на создание отношений из-за слишком больших различий между ними.",
+					"interestCompatibilityFriends" : 52,
+					"interestCompatibilityLove" : 38
+				},
+				{
+					"zodiacName" : "Pisces",
+					"compatibilityDescription" : " Данная пара может стать отличными друзьями.",
+					"compatibilityDescriptionLove" : " Хорошие шансы на длительные отношения, благодаря общим интересам и взаимопониманию.",
+					"interestCompatibilityFriends" : 83,
+					"interestCompatibilityLove" : 78
+				}
+			]
+		}
+	]
+}
