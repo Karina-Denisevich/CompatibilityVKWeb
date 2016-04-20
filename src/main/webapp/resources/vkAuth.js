@@ -1,4 +1,3 @@
-
 function createInfo() {
     var ids = [];
     var sexes = [];
@@ -25,10 +24,13 @@ function createInfo() {
 
 
                     $('#clientForm\\:vkId').val(ids);
+                    $('#clientForm\\:vkBdate').val(bDates);
+                    $('#clientForm\\:vkSex').val(sexes);
+                    $('#clientForm\\:link1').click();
+                    $('#clientForm\\:link2').click();
+                    $('#clientForm\\:link3').click();
 
-                    $('clientForm\\:link1').click(); //rewrite ids in Main. doesn't work
-
-                    $('#clientForm\\:link5').click(); // call mainClass()
+                    setTimeout(function(){$('#clientForm\\:link5').click()}, 2000);
 
 
                     //);

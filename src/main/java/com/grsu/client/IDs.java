@@ -25,6 +25,7 @@ public class IDs {
         for (int i = 0; i < ids.size(); i++) {
 
             User user = new User();
+
             user.setId(ids.get(i));
             userList.add(user);
         }

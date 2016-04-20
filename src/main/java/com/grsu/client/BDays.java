@@ -10,17 +10,9 @@ public class BDays  {
 
     public void fill(ArrayList<User> user, ArrayList<String> bdates) {
 
-       // User user = new User();
         for (int i = 0; i < user.size(); i++) {
 
-          //  if (bdates.get(i) != null) {
-
-//            user.setbDay(bdates.get(i));
-//                user.get(i).setbDay(bdates.get(i));
             user.get(i).setbDay(bdates.get(i));
-
-               // usersArrayList.get(i).setbDay(bdates.get(i));
-           // }
         }
     }
 }

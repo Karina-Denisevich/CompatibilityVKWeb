@@ -17,36 +17,31 @@
     <f:view>
         <h:form id="clientForm">
 
-            <h2>Значения в поле есть, но в метод set не добавляются</h2>
-            <h:inputText id="vkId" value="#{main.ids}"/>
-            <h:commandLink id="link1">
+            <h:inputText id="vkId"/>
+            <h:commandLink id="link1" action="#{main.executeId()}">
                 <f:ajax execute="vkId"/>
             </h:commandLink>
 
 
+            <h:inputText id="vkBdate"/>
+            <h:commandLink id="link2" action="#{main.executeBdate()}">
+                <f:ajax execute="vkBdate"/>
+            </h:commandLink>
+
+
+            <h:inputText id="vkSex"/>
+            <h:commandLink id="link3" action="#{main.executeSex()}">
+                <f:ajax execute="vkSex"/>
+            </h:commandLink>
+
 
             <h:commandLink id="link5" action="#{main.mainClass}">
-                ids in main:
                 <f:ajax render="outp2"/>
             </h:commandLink>
-            <h:outputText id="outp2" value="#{main.ids}" style="background-color: darksalmon" />
+            <h:outputText id="outp2" value="#{main.pe}" style="background-color: darksalmon"/>
 
 
             <input type="button" value="OK" onclick="createInfo()"/>
-
-
-
-
-            <!--<h:inputText id="vkBdate" value="#{main.bDates}"/>-->
-            <!--<h:commandLink id="link2">-->
-            <!--<f:ajax execute="vkBdate"/>-->
-            <!--</h:commandLink>-->
-
-
-            <!--<h:inputText id="vkSex" value="#{main.sexes}"/>-->
-            <!--<h:commandLink id="link3">-->
-            <!--<f:ajax execute="vkSex"/>-->
-            <!--</h:commandLink>-->
 
 
             <!--<h:inputText id="vkBdate" value="#{main.bDates}"/>-->

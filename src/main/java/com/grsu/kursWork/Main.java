@@ -20,6 +20,8 @@ import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import javax.faces.convert.BooleanConverter;
 import javax.faces.event.AjaxBehaviorEvent;
+import javax.servlet.*;
+import javax.servlet.http.HttpServletRequest;
 import java.io.FileReader;
 import java.io.IOException;
 import java.sql.ResultSet;
@@ -33,111 +35,150 @@ import java.util.HashMap;
 @SessionScoped
 public class Main {
 
-    private ArrayList<User> usersArrayList = new ArrayList<User>();
+    public void executeId() {
+        HttpServletRequest request = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
+        String txtProperty = request.getParameter("clientForm:vkId");
+
+        setIds(txtProperty);
+    }
+
+    public void executeBdate() {
+        HttpServletRequest request = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
+        String txtProperty = request.getParameter("clientForm:vkBdate");
+
+        setbDates(txtProperty);
+    }
+
+    public void executeSex() {
+        HttpServletRequest request = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
+        String txtProperty = request.getParameter("clientForm:vkSex");
+
+        setSexes(txtProperty);
+    }
 
 
     private ArrayList<String> ids = new ArrayList<String>();
     private ArrayList<String> bDates = new ArrayList<String>();
     private ArrayList<String> sexes = new ArrayList<String>();
 
-    public String getIds() {
-
-        if (ids.size() > 0) {
-            return ids.get(0);
-        } else
-            return String.valueOf(ids.size());
-    }
 
     public void setIds(String ids) {
         this.ids = new Parsing().parse(ids);
     }
 
-
-    public ArrayList<String> getbDates() {return bDates;}
     public void setbDates(String bDates) {
         this.bDates = new Parsing().parse(bDates);
     }
-    public ArrayList<String> getSexes() {
-        return sexes;
-    }
+
     public void setSexes(String sexes) {
         this.sexes = new Parsing().parse(sexes);
     }
 
 
+    private String pe = "kk";
 
+    public String getPe() {
+        return pe;
+    }
+
+    public void setPe(String pe) {
+        this.pe = pe;
+    }
+
+    public ArrayList<String> getIds() {
+        return ids;
+    }
+
+    public ArrayList<String> getbDates() {
+        return bDates;
+    }
+
+    public ArrayList<String> getSexes() {
+        return sexes;
+    }
+
+    private ArrayList<String> compatibilityDescription = new ArrayList<String>();
+    private ArrayList<String> interestCompatibility= new ArrayList<String>();
+
+    public void setCompatibilityDescription(ArrayList<String> compatibilityDescription) {
+        this.compatibilityDescription = compatibilityDescription;
+    }
+
+
+    public void setInterestCompatibility(ArrayList<String> interestCompatibility) {
+        this.interestCompatibility = interestCompatibility;
+    }
+
+    public ArrayList<String> getCompatibilityDescription() {
+        return compatibilityDescription;
+    }
+
+    public ArrayList<String> getInterestCompatibility() {
+        return interestCompatibility;
+    }
 
 
     public void mainClass() {
 
-//       compatibilityStr.add("kkf");
-//
-//
-//         ArrayList<User> userList = new ArrayList<User>();
-//
-//        IDs fillID = new IDs();
-//        fillID.fill(userList, getIds());
-
-//
-//        BDays bDays = new BDays();
-//        bDays.fill(userList, getbDates());
-//
-//        Sex sex = new Sex();
-//        sex.fill(userList, getSexes());
-
-//
-        // usersArrayList = userList;
-
-//        for (int i = 0; i < userList.size(); i++) {
-//            usersArrayList.add(userList.get(i));
-//        }
+        ArrayList<User> usersArrayList = new ArrayList<User>();
 
 
-//        IDs fillID = new IDs();
-//        fillID.fill(usersArrayList, ids);
-//
-//        BDays bDays = new BDays();
-//        bDays.fill(usersArrayList, bDates);
-//
-//        Sex sex = new Sex();
-//        sex.fill(usersArrayList, sexes);
+        IDs fillID = new IDs();
+        fillID.fill(usersArrayList, ids);
 
-//
-//        HashMap<String, ArrayList<ZodiacsPairs>> zodiacsCompatibilities =
-//                new ZodiacLoading().getCompatibilities();
-//
-//
-//        Zodiacs zodiacs = new Zodiacs();
-//        ArrayList<Zodiac> userZodiacs;
-//        userZodiacs = zodiacs.getZodiacs(usersArrayList);
-//        zod = userZodiacs.get(0).name();
-//
-//        zodiacs.fill(usersArrayList, userZodiacs);
-//
-//        if (!usersArrayList.get(0).getZodiac().name().equals("Unknown")) {
-//
-//            ArrayList<ZodiacsPairs> zodiacPairs = zodiacsCompatibilities.get(usersArrayList.get(0).getZodiac().name());
-//
-//            for (int i = 1; i < usersArrayList.size(); i++) {
-//
-//                for (ZodiacsPairs pair : zodiacPairs) {
-//
-//                    if (pair.getZodiacName().equals(usersArrayList.get(i).getZodiac().name())) {
-//
-//                        if (!sex.isTheSameSex(usersArrayList.get(0).getSex(),
-//                                usersArrayList.get(i).getSex())) {
-//
-//                            compatibilityStr.add(pair.getCompatibilityDescriptionLove());
-//                            compatibilityNumb.add(String.valueOf(pair.getInterestCompatibilityLove()));
-//                        } else {
-//
-//                            compatibilityStr.add(pair.getCompatibilityDescription());
-//                            compatibilityNumb.add(String.valueOf(pair.getInterestCompatibilityFriends()));
-//                        }
-//                    }
-//                }
-//            }
-//        }
+        BDays bDays = new BDays();
+        bDays.fill(usersArrayList, bDates);
+
+        Sex sex = new Sex();
+        sex.fill(usersArrayList, sexes);
+
+
+
+
+
+
+        HashMap<String, ArrayList<ZodiacsPairs>> zodiacsCompatibilities =
+                new ZodiacLoading().getCompatibilities();
+
+
+        Zodiacs zodiacs = new Zodiacs();
+        ArrayList<Zodiac> userZodiacs;
+        userZodiacs = zodiacs.getZodiacs(usersArrayList);
+
+        zodiacs.fill(usersArrayList, userZodiacs);
+
+        if (!usersArrayList.get(0).getZodiac().name().equals("Unknown")) {
+
+            ArrayList<ZodiacsPairs> zodiacPairs = zodiacsCompatibilities.get(usersArrayList.get(0).getZodiac().name());
+
+            for (int i = 1; i < usersArrayList.size(); i++) {
+
+                int amountZod = 0;
+                for (ZodiacsPairs pair : zodiacPairs) {
+
+                    amountZod++;
+                    if (pair.getZodiacName().equals(usersArrayList.get(i).getZodiac().name())) {
+
+                        if (!sex.isTheSameSex(usersArrayList.get(0).getSex(),
+                                usersArrayList.get(i).getSex())) {
+
+                            compatibilityDescription.add(pair.getCompatibilityDescriptionLove());
+                            interestCompatibility.add(String.valueOf(pair.getInterestCompatibilityLove()));
+                        } else {
+
+                            compatibilityDescription.add(pair.getCompatibilityDescription());
+                            interestCompatibility.add(String.valueOf(pair.getInterestCompatibilityFriends()));
+                        }
+                    }
+                }
+                if(amountZod == 12){
+                    compatibilityDescription.add("-");
+                    interestCompatibility.add("0");
+                }
+            }
+        }
+
+        pe = compatibilityDescription.get(1);
 
 //return null;
         // audios

@@ -7,8 +7,6 @@ import java.util.ArrayList;
 
 public class Sex  {
 
-
-
     public void fill(ArrayList<User> user, ArrayList<String> sex) {
 
         for (int i = 0; i < user.size(); i++) {
@@ -18,15 +16,6 @@ public class Sex  {
 
     }
 
-
-//    public void fill(ArrayList<User> usersArrayList, ArrayList<String> sex) {
-//
-//        for (int i = 0; i < usersArrayList.size(); i++) {
-//
-//            usersArrayList.get(i).setSex(sex.get(i));
-//        }
-//
-//    }
 
     public boolean isTheSameSex(SexEnum sex1, SexEnum sex2) {
 
