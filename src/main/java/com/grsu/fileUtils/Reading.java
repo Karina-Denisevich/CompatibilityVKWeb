@@ -1,26 +1,32 @@
 package com.grsu.fileUtils;
 
+
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
+import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 
 public class Reading {
 
-    public JSONArray readJson(String fileName, String object){
+    public JSONArray readJson(String fileName, String object) {
 
         try {
 
             JSONParser parser = new JSONParser();
 
-            JSONObject jsonObject  = (JSONObject) parser.parse(new FileReader(fileName));
+            JSONObject jsonObject = (JSONObject) parser.parse(new FileReader(fileName));
 
-            return (JSONArray) jsonObject.get("zodiacs");
+            return (JSONArray) jsonObject.get(object);
 
-        }catch (Exception ex){
-
-            System.out.println(ex.getMessage());
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        } catch (ParseException e) {
+            e.printStackTrace();
             return null;
         }
     }

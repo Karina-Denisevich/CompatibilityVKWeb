@@ -17,49 +17,66 @@
     <f:view>
         <h:form id="clientForm">
 
-            <h:panelGroup layout="block">
-                <h:inputText id="firstId" value="#{main.firstId}"/>
-                <h:commandButton id="button" value="Ok">
-                    <f:ajax render="output" execute="firstId"/>
-                </h:commandButton>
-
-                <h:outputText id="output" value="#{main.firstId}"/>
-            </h:panelGroup>
+            <!--<h:panelGroup layout="block">-->
+                <!--<h:inputText id="firstId" value="#{main.firstId}"/>-->
+                <!--<h:commandButton id="button" value="Ok">-->
+                    <!--<f:ajax execute="firstId"/>-->
+                <!--</h:commandButton>-->
+            <!--</h:panelGroup>-->
 
 
             <h:inputText id="vkId" value="#{main.ids}"/>
-            <h:outputText id="id" value="#{main.ids}" style="font-size: x-large"/>
-            <h:commandLink id="but1">
-                id
-                <f:ajax render="id" execute="vkId"/>
+            <h:commandLink id="link1">
+                <f:ajax execute="vkId"/>
             </h:commandLink>
 
 
             <h:inputText id="vkBdate" value="#{main.bDates}"/>
-            <h:outputText id="bdate" value="#{main.bDates}" style="font-size: x-large"/>
-            <h:commandLink id="but2">
-                dbate
-                <f:ajax render="bdate" execute="vkBdate"/>
+            <h:commandLink id="link2">
+                <f:ajax execute="vkBdate"/>
             </h:commandLink>
 
 
             <h:inputText id="vkSex" value="#{main.sexes}"/>
-            <h:outputText id="sex" value="#{main.sexes}" style="font-size: x-large"/>
-            <h:commandLink id="but3">
-                sex
-                <f:ajax render="sex" execute="vkSex"/>
+            <h:commandLink id="link3">
+                <f:ajax execute="vkSex"/>
             </h:commandLink>
 
 
-            <h:inputText id="vkAudio" value="#{main.artists}"/>
-            <h:outputText id="audio" value="#{main.artists}" style="font-size: x-large"/>
-            <h:commandLink id="but4">
-                aud
-                <f:ajax render="audio" execute="vkAudio"/>
-            </h:commandLink>
+            <!--<h:inputHidden id="vkAudio" value="#{main.artists}"/>-->
+            <!--<h:commandLink id="link4">-->
+                <!--<f:ajax execute="vkAudio"/>-->
+            <!--</h:commandLink>-->
 
 
             <input type="button" value="OK" onclick="createInfo()"/>
+
+
+            <h:commandLink id="link5" action="#{main.mainClass}">
+                <f:ajax render="outp2"/>
+            </h:commandLink>
+            <h:outputText id="outp2" value="#{main.per}" style="background-color: darksalmon" />
+
+
+            <h:commandLink id="link6">
+                <f:ajax render="outp"/>
+            </h:commandLink>
+            <h:outputText id="outp" value="#{main.per}" style="background-color: aquamarine" />
+
+
+            <h:commandLink id="link7">
+                <f:ajax render="outp1"/>
+            </h:commandLink>
+            <h:outputText id="outp1" value="#{main.usersArrayList}" style="background-color: #cccccc" />
+
+
+            <!---->
+
+            <!--<ui:repeat value="#{main.compatibilityStr}" var="o">-->
+                <!--<h:inputText value="#{o}" />-->
+            <!--</ui:repeat>-->
+
+
 
         </h:form>
     </f:view>

@@ -10,7 +10,7 @@ function createInfo() {
     );
 
     function getUserInfoVK() {
-        VK.api('users.get', {uids: '50181012, idgoaway1, 133930656', fields: 'uid, sex, bdate'}
+        VK.api('users.get', {uids: '50181012, idgoaway1, nordicwarrior', fields: 'uid, sex, bdate'}
             , function f(r) {
 
                 if (r.response) {
@@ -23,16 +23,31 @@ function createInfo() {
                         bDates.push(r.response[i].bdate);
                     }
 
-                    $('#clientForm\\:vkId').val(ids);
-                    $('#clientForm\\:vkSex').val(sexes);
-                    $('#clientForm\\:vkBdate').val(bDates);
-                    $('#clientForm\\:but1').click();
-                    $('#clientForm\\:but2').click();
-                    $('#clientForm\\:but3').click();
+                    //$('#clientForm\\:vkId').val(ids);
+                    //$('#clientForm\\:vkSex').val(sexes);
+                    //$('#clientForm\\:vkBdate').val(bDates);
+                    $('#clientForm\\:link1').click(function(){
+                            $('#clientForm\\:vkId').val(ids);
+                        return false;
+                    }
+
+                    );
+                    $('#clientForm\\:link2').click(function(){
+                            $('#clientForm\\:vkSex').val(sexes);
+                        return false;
+                    }
+
+                    );
+                    $('#clientForm\\:link3').click(function(){
+                        $('#clientForm\\:vkBdate').val(bDates);
+                        return false;
+                    });
+                    // getUserAudio(0);
+
+
+                    $('#clientForm\\:link5').click();
+                    setTimeout(callAfterMain, 2000);
                 }
-                // for(var i = 0; i < ids.length; i++) {
-                getUserAudio(0);
-                // }
             }
         );
     }
@@ -40,22 +55,30 @@ function createInfo() {
 
     function getUserAudio(i) {
 
-        VK.api('audio.get', {owner_id: ids[i], count: '3'}, function (audio) {
+        VK.api('audio.get', {owner_id: ids[i], count: '10'}, function (audio) {
             if (audio.response) {
                 for (var j = 1; j < audio.response.length; j++) {
-                    //alert(audio.response[j].artist);
                     artists.push(audio.response[j].artist);
                 }
             } else {
                 artists.push(null);
             }
             $('#clientForm\\:vkAudio').val(artists);
-            $('#clientForm\\:but4').click();
+            $('#clientForm\\:link4').click();
             artists = [];
             i++;
             if (i < ids.length) {
                 getUserAudio(i);
+            }else{
+                $('#clientForm\\:link5').click();
+                setTimeout(callAfterMain, 2000);
             }
         });
     }
+
+    function callAfterMain(){
+        $('#clientForm\\:link6').click();
+        $('#clientForm\\:link7').click();
+    }
+
 }

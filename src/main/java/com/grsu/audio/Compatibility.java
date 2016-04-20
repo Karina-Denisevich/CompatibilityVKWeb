@@ -36,7 +36,6 @@ public class Compatibility {
                         }
                     }
 
-
                     for (Map.Entry<String, Integer> e : genresCopy.entrySet()) {
                         amountGenresCopy -= e.getValue();
                     }
@@ -46,9 +45,6 @@ public class Compatibility {
 
                 compatibilities.add(persentComp);
             }
-        }else{
-            compatibilities.add(-2.0);
         }
-
     }
 }
