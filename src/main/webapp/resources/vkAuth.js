@@ -1,3 +1,4 @@
+
 function createInfo() {
     var ids = [];
     var sexes = [];
@@ -15,70 +16,68 @@ function createInfo() {
 
                 if (r.response) {
 
-                    var i;
-                    for (i = 0; i < r.response.length; i++) {
+                    for (var i = 0; i < r.response.length; i++) {
 
                         ids.push(r.response[i].uid);
                         sexes.push(r.response[i].sex);
                         bDates.push(r.response[i].bdate);
                     }
 
-                    //$('#clientForm\\:vkId').val(ids);
-                    //$('#clientForm\\:vkSex').val(sexes);
-                    //$('#clientForm\\:vkBdate').val(bDates);
-                    $('#clientForm\\:link1').click(function(){
-                            $('#clientForm\\:vkId').val(ids);
-                        return false;
-                    }
 
-                    );
-                    $('#clientForm\\:link2').click(function(){
-                            $('#clientForm\\:vkSex').val(sexes);
-                        return false;
-                    }
+                    $('#clientForm\\:vkId').val(ids);
 
-                    );
-                    $('#clientForm\\:link3').click(function(){
-                        $('#clientForm\\:vkBdate').val(bDates);
-                        return false;
-                    });
+                    $('clientForm\\:link1').click(); //rewrite ids in Main. doesn't work
+
+                    $('#clientForm\\:link5').click(); // call mainClass()
+
+
+                    //);
+                    //$('#clientForm\\:link2').click(function(){
+                    //        $('#clientForm\\:vkSex').val(sexes);
+                    //    return false;
+                    //}
+                    //
+                    //);
+                    //$('#clientForm\\:link3').click(function(){
+                    //    $('#clientForm\\:vkBdate').val(bDates);
+                    //    return false;
+                    //});
                     // getUserAudio(0);
 
-
-                    $('#clientForm\\:link5').click();
-                    setTimeout(callAfterMain, 2000);
+                    //
+                   // setTimeout(callAfterMain, 2000);
                 }
-            }
-        );
+            });
     }
 
 
-    function getUserAudio(i) {
-
-        VK.api('audio.get', {owner_id: ids[i], count: '10'}, function (audio) {
-            if (audio.response) {
-                for (var j = 1; j < audio.response.length; j++) {
-                    artists.push(audio.response[j].artist);
-                }
-            } else {
-                artists.push(null);
-            }
-            $('#clientForm\\:vkAudio').val(artists);
-            $('#clientForm\\:link4').click();
-            artists = [];
-            i++;
-            if (i < ids.length) {
-                getUserAudio(i);
-            }else{
-                $('#clientForm\\:link5').click();
-                setTimeout(callAfterMain, 2000);
-            }
-        });
-    }
-
+    //
+    //function getUserAudio(i) {
+    //
+    //    VK.api('audio.get', {owner_id: ids[i], count: '10'}, function (audio) {
+    //        if (audio.response) {
+    //            for (var j = 1; j < audio.response.length; j++) {
+    //                artists.push(audio.response[j].artist);
+    //            }
+    //        } else {
+    //            artists.push(null);
+    //        }
+    //        $('#clientForm\\:vkAudio').val(artists);
+    //        $('#clientForm\\:link4').click();
+    //        artists = [];
+    //        i++;
+    //        if (i < ids.length) {
+    //            getUserAudio(i);
+    //        }else{
+    //            $('#clientForm\\:link5').click();
+    //            setTimeout(callAfterMain, 2000);
+    //        }
+    //    });
+    //}
+    //
     function callAfterMain(){
         $('#clientForm\\:link6').click();
-        $('#clientForm\\:link7').click();
+        //$('#clientForm\\:link7').click();
     }
 
 }

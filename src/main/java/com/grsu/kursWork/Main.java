@@ -16,6 +16,8 @@ import org.json.simple.parser.ParseException;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import javax.faces.context.ExternalContext;
+import javax.faces.context.FacesContext;
 import javax.faces.convert.BooleanConverter;
 import javax.faces.event.AjaxBehaviorEvent;
 import java.io.FileReader;
@@ -34,60 +36,16 @@ public class Main {
     private ArrayList<User> usersArrayList = new ArrayList<User>();
 
 
-    private String zod;
-
-    public String getZod() {
-        return zod;
-    }
-
-    public void setZod(String zod) {
-        this.zod = zod;
-    }
-
-    public String getUsersArrayList() {
-        return String.valueOf(usersArrayList.size());
-    }
-
-    public void setUsersArrayList(ArrayList<User> usersArrayList) {
-        this.usersArrayList = usersArrayList;
-    }
-
-    private ArrayList<String> compatibilityStr = new ArrayList<String>();
-    private ArrayList<String> compatibilityNumb = new ArrayList<String>();
-    private ArrayList<String> compatibilityAudio = new ArrayList<String>();
-
-
-    public String getCompatibilityStr() {
-        return String.valueOf(compatibilityStr.size());
-    }
-
-    public ArrayList<String> getCompatibilityNumb() {
-        return compatibilityNumb;
-    }
-
-
-    public ArrayList<String> getCompatibilityAudio() {
-        return compatibilityAudio;
-    }
-
-
     private ArrayList<String> ids = new ArrayList<String>();
     private ArrayList<String> bDates = new ArrayList<String>();
     private ArrayList<String> sexes = new ArrayList<String>();
-    private ArrayList<ArrayList<String>> artists = new ArrayList<ArrayList<String>>();
 
+    public String getIds() {
 
-    public ArrayList<ArrayList<String>> getArtists() {
-        return artists;
-    }
-
-    public void setArtists(String artists) {
-        this.artists.add(new Parsing().parse(artists));
-    }
-
-
-    public ArrayList<String> getIds() {
-        return ids;
+        if (ids.size() > 0) {
+            return ids.get(0);
+        } else
+            return String.valueOf(ids.size());
     }
 
     public void setIds(String ids) {
@@ -95,67 +53,31 @@ public class Main {
     }
 
 
-    public ArrayList<String> getbDates() {
-//        if(bDates.size()>0)
-//        return bDates.get(2);
-//        else
-//            return String.valueOf(bDates.size());
-        return bDates;
-    }
-
+    public ArrayList<String> getbDates() {return bDates;}
     public void setbDates(String bDates) {
         this.bDates = new Parsing().parse(bDates);
     }
-
-
     public ArrayList<String> getSexes() {
         return sexes;
     }
-
     public void setSexes(String sexes) {
         this.sexes = new Parsing().parse(sexes);
     }
 
 
-    private String firstId = "f";
-    private String secondId = "s";
 
 
-    public String getFirstId() {
-        return firstId;
-    }
 
-    public void setFirstId(String firstId) {
-        this.firstId = firstId;
-    }
-
-    public String getSecondId() {
-        return secondId;
-    }
-
-    public void setSecondId(String secondId) {
-        this.secondId = secondId;
-    }
-
-    private String per = "k";
-
-    public String getPer() {
-        return per;
-    }
-
-
-    public void mainClass() throws IOException {
+    public void mainClass() {
 
 //       compatibilityStr.add("kkf");
 //
+//
+//         ArrayList<User> userList = new ArrayList<User>();
+//
+//        IDs fillID = new IDs();
+//        fillID.fill(userList, getIds());
 
-        ArrayList<User> userList = new ArrayList<User>();
-
-        //IDs fillID = new IDs();
-        if(getbDates().size()>0)
-        per=getbDates().get(0);
-        else  per ="karina";
-       // per=fillID.fill(userList, getIds());
 //
 //        BDays bDays = new BDays();
 //        bDays.fill(userList, getbDates());
@@ -163,12 +85,8 @@ public class Main {
 //        Sex sex = new Sex();
 //        sex.fill(userList, getSexes());
 
-       // per = getbDates().get(0);
 //
-//
-//
-//
-        usersArrayList = userList;
+        // usersArrayList = userList;
 
 //        for (int i = 0; i < userList.size(); i++) {
 //            usersArrayList.add(userList.get(i));

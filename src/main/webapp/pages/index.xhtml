@@ -17,66 +17,42 @@
     <f:view>
         <h:form id="clientForm">
 
-            <!--<h:panelGroup layout="block">-->
-                <!--<h:inputText id="firstId" value="#{main.firstId}"/>-->
-                <!--<h:commandButton id="button" value="Ok">-->
-                    <!--<f:ajax execute="firstId"/>-->
-                <!--</h:commandButton>-->
-            <!--</h:panelGroup>-->
-
-
+            <h2>Значения в поле есть, но в метод set не добавляются</h2>
             <h:inputText id="vkId" value="#{main.ids}"/>
             <h:commandLink id="link1">
                 <f:ajax execute="vkId"/>
             </h:commandLink>
 
 
-            <h:inputText id="vkBdate" value="#{main.bDates}"/>
-            <h:commandLink id="link2">
-                <f:ajax execute="vkBdate"/>
+
+            <h:commandLink id="link5" action="#{main.mainClass}">
+                ids in main:
+                <f:ajax render="outp2"/>
             </h:commandLink>
-
-
-            <h:inputText id="vkSex" value="#{main.sexes}"/>
-            <h:commandLink id="link3">
-                <f:ajax execute="vkSex"/>
-            </h:commandLink>
-
-
-            <!--<h:inputHidden id="vkAudio" value="#{main.artists}"/>-->
-            <!--<h:commandLink id="link4">-->
-                <!--<f:ajax execute="vkAudio"/>-->
-            <!--</h:commandLink>-->
+            <h:outputText id="outp2" value="#{main.ids}" style="background-color: darksalmon" />
 
 
             <input type="button" value="OK" onclick="createInfo()"/>
 
 
-            <h:commandLink id="link5" action="#{main.mainClass}">
-                <f:ajax render="outp2"/>
-            </h:commandLink>
-            <h:outputText id="outp2" value="#{main.per}" style="background-color: darksalmon" />
 
 
-            <h:commandLink id="link6">
-                <f:ajax render="outp"/>
-            </h:commandLink>
-            <h:outputText id="outp" value="#{main.per}" style="background-color: aquamarine" />
+            <!--<h:inputText id="vkBdate" value="#{main.bDates}"/>-->
+            <!--<h:commandLink id="link2">-->
+            <!--<f:ajax execute="vkBdate"/>-->
+            <!--</h:commandLink>-->
 
 
-            <h:commandLink id="link7">
-                <f:ajax render="outp1"/>
-            </h:commandLink>
-            <h:outputText id="outp1" value="#{main.usersArrayList}" style="background-color: #cccccc" />
+            <!--<h:inputText id="vkSex" value="#{main.sexes}"/>-->
+            <!--<h:commandLink id="link3">-->
+            <!--<f:ajax execute="vkSex"/>-->
+            <!--</h:commandLink>-->
 
 
-            <!---->
-
-            <!--<ui:repeat value="#{main.compatibilityStr}" var="o">-->
-                <!--<h:inputText value="#{o}" />-->
-            <!--</ui:repeat>-->
-
-
+            <!--<h:inputText id="vkBdate" value="#{main.bDates}"/>-->
+            <!--<h:commandLink id="link2">-->
+            <!--<f:ajax execute="vkBdate"/>-->
+            <!--</h:commandLink>-->
 
         </h:form>
     </f:view>
