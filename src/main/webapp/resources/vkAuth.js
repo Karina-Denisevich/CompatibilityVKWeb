@@ -1,5 +1,6 @@
 function createInfo() {
     var ids = [];
+    var names = [];
     var sexes = [];
     var bDates = [];
     var artists = [];
@@ -10,7 +11,7 @@ function createInfo() {
     );
 
     function getUserInfoVK() {
-        VK.api('users.get', {uids: '50181012, idgoaway1, nordicwarrior', fields: 'uid, sex, bdate'}
+        VK.api('users.get', {uids: '50181012, 133930656, nordicwarrior', fields: 'uid, sex, bdate'}
             , function f(r) {
 
                 if (r.response) {
@@ -18,68 +19,54 @@ function createInfo() {
                     for (var i = 0; i < r.response.length; i++) {
 
                         ids.push(r.response[i].uid);
+                        names.push(r.response[i].first_name + " " + r.response[i].last_name)
                         sexes.push(r.response[i].sex);
                         bDates.push(r.response[i].bdate);
                     }
 
-
                     $('#clientForm\\:vkId').val(ids);
+                    $('#clientForm\\:vkName').val(names);
                     $('#clientForm\\:vkBdate').val(bDates);
                     $('#clientForm\\:vkSex').val(sexes);
+
                     $('#clientForm\\:link1').click();
                     $('#clientForm\\:link2').click();
                     $('#clientForm\\:link3').click();
+                    $('#clientForm\\:link4').click();
 
-                    setTimeout(function(){$('#clientForm\\:link5').click()}, 700);
-
-
-                    //);
-                    //$('#clientForm\\:link2').click(function(){
-                    //        $('#clientForm\\:vkSex').val(sexes);
-                    //    return false;
-                    //}
-                    //
-                    //);
-                    //$('#clientForm\\:link3').click(function(){
-                    //    $('#clientForm\\:vkBdate').val(bDates);
-                    //    return false;
-                    //});
-                    // getUserAudio(0);
-
-                    //
-                   // setTimeout(callAfterMain, 2000);
+                    getUserAudio(0);
                 }
-            });
+            }
+        )
     }
 
 
-    //
-    //function getUserAudio(i) {
-    //
-    //    VK.api('audio.get', {owner_id: ids[i], count: '10'}, function (audio) {
-    //        if (audio.response) {
-    //            for (var j = 1; j < audio.response.length; j++) {
-    //                artists.push(audio.response[j].artist);
-    //            }
-    //        } else {
-    //            artists.push(null);
-    //        }
-    //        $('#clientForm\\:vkAudio').val(artists);
-    //        $('#clientForm\\:link4').click();
-    //        artists = [];
-    //        i++;
-    //        if (i < ids.length) {
-    //            getUserAudio(i);
-    //        }else{
-    //            $('#clientForm\\:link5').click();
-    //            setTimeout(callAfterMain, 2000);
-    //        }
-    //    });
-    //}
-    //
-    function callAfterMain(){
-        $('#clientForm\\:link6').click();
-        //$('#clientForm\\:link7').click();
-    }
 
+
+    function getUserAudio(i) {
+
+        VK.api('audio.get', {owner_id: ids[i], count: '10'}, function (audio) {
+
+            if (audio.response) {
+
+                for (var j = 1; j < audio.response.length; j++) {
+                    artists.push(audio.response[j].artist);
+                }
+            } else {
+                artists.push("");
+            }
+
+            $('#clientForm\\:vkAudio').val(artists);
+            $('#clientForm\\:link5').click();
+
+            artists = [];
+            i++;
+
+            if (i < ids.length) {
+                getUserAudio(i);
+            }else{
+                $('#clientForm\\:link6').click();
+            }
+        });
+    }
 }

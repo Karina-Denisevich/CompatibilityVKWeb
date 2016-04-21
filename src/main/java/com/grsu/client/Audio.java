@@ -4,7 +4,7 @@ import com.grsu.user.User;
 
 import java.util.ArrayList;
 
-public class Audios implements Filling<ArrayList<ArrayList<String>>> {
+public class Audio {
 
     public void fill(ArrayList<User> usersArrayList, ArrayList<ArrayList<String>> audios) {
 

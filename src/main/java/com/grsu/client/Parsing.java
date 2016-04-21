@@ -10,6 +10,10 @@ public class Parsing {
 
         String data;
 
+        if(str.length() == 0){
+            arr.add("");
+        }
+
         for (int i = 0; i < str.length(); ) {
 
             if (str.indexOf(",") != i) {

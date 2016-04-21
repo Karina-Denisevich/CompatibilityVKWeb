@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class Compatibility {
 
-    public void getCompatibility(ArrayList<User> userArrayList) {
+    public ArrayList<String> getCompatibility(ArrayList<User> userArrayList) {
 
         int amountGenres = 0;
         int amountGenresCopy = 0;
@@ -15,7 +15,7 @@ public class Compatibility {
             amountGenres += e.getValue();
         }
 
-        ArrayList<Double> compatibilities = new ArrayList<Double>();
+        ArrayList<String> compatibilities = new ArrayList<String>();
 
         if (userArrayList.get(0).getAudios().size() > 0) {
 
@@ -43,8 +43,9 @@ public class Compatibility {
                      persentComp = amountGenresCopy * 100 / amountGenres;
                 }
 
-                compatibilities.add(persentComp);
+                compatibilities.add(String.valueOf(persentComp));
             }
         }
+        return compatibilities;
     }
 }

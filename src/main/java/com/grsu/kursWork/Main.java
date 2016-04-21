@@ -4,26 +4,17 @@ import com.grsu.audio.Compatibility;
 import com.grsu.client.*;
 import com.grsu.dataBase.DBWorker;
 import com.grsu.dataBase.MusicGroups;
-import com.grsu.fileUtils.Reading;
 import com.grsu.user.User;
 import com.grsu.zodiac.Zodiac;
 import com.grsu.zodiac.ZodiacLoading;
 import com.grsu.zodiac.ZodiacsPairs;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
+
+import java.sql.*;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
-import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
-import javax.faces.convert.BooleanConverter;
-import javax.faces.event.AjaxBehaviorEvent;
-import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
-import java.io.FileReader;
-import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -42,6 +33,13 @@ public class Main {
         setIds(txtProperty);
     }
 
+    public void executeName() {
+        HttpServletRequest request = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
+        String txtProperty = request.getParameter("clientForm:vkName");
+
+        setNames(txtProperty);
+    }
+
     public void executeBdate() {
         HttpServletRequest request = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
         String txtProperty = request.getParameter("clientForm:vkBdate");
@@ -56,46 +54,64 @@ public class Main {
         setSexes(txtProperty);
     }
 
+    public void executeAudio() {
+        HttpServletRequest request = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
+        String txtProperty = request.getParameter("clientForm:vkAudio");
+
+        setAudios(txtProperty);
+    }
+
 
     private ArrayList<String> ids = new ArrayList<String>();
+    private ArrayList<String> names = new ArrayList<String>();
     private ArrayList<String> bDates = new ArrayList<String>();
     private ArrayList<String> sexes = new ArrayList<String>();
+    private ArrayList<ArrayList<String>> audios = new ArrayList<ArrayList<String>>();
 
 
     public void setIds(String ids) {
         this.ids = new Parsing().parse(ids);
     }
+    public ArrayList<String> getIds() {
+        return ids;
+    }
+
+    public void setNames(String names) {
+        this.names = new Parsing().parse(names);
+    }
 
     public void setbDates(String bDates) {
         this.bDates = new Parsing().parse(bDates);
+    }
+    public ArrayList<String> getbDates() {
+        return bDates;
     }
 
     public void setSexes(String sexes) {
         this.sexes = new Parsing().parse(sexes);
     }
+    public ArrayList<String> getSexes() {
+        return sexes;
+    }
+
+    public void setAudios(String audiosOne) {
+        ArrayList<String> a = new Parsing().parse(audiosOne);
+        audios.add(a);
+    }
+
 
 
     private String pe = "kk";
-
     public String getPe() {
         return pe;
     }
-
     public void setPe(String pe) {
         this.pe = pe;
     }
 
-    public ArrayList<String> getIds() {
-        return ids;
-    }
 
-    public ArrayList<String> getbDates() {
-        return bDates;
-    }
 
-    public ArrayList<String> getSexes() {
-        return sexes;
-    }
+
 
     private ArrayList<String> compatibilityDescription = new ArrayList<String>();
     private ArrayList<String> interestCompatibility= new ArrayList<String>();
@@ -104,19 +120,30 @@ public class Main {
         this.compatibilityDescription = compatibilityDescription;
     }
 
-
-    public void setInterestCompatibility(ArrayList<String> interestCompatibility) {
-        this.interestCompatibility = interestCompatibility;
-    }
-
     public ArrayList<String> getCompatibilityDescription() {
         return compatibilityDescription;
     }
 
+    public void setInterestCompatibility(ArrayList<String> interestCompatibility) {
+        this.interestCompatibility = interestCompatibility;
+    }
     public ArrayList<String> getInterestCompatibility() {
         return interestCompatibility;
     }
 
+
+
+
+
+    private ArrayList<String> compatibilityByAudios;
+
+    public ArrayList<String> getCompatibilityByAudios() {
+        return compatibilityByAudios;
+    }
+
+    public void setCompatibilityByAudios(ArrayList<String> compatibilityByAudios) {
+        this.compatibilityByAudios = compatibilityByAudios;
+    }
 
     public void mainClass() {
 
@@ -126,6 +153,9 @@ public class Main {
         IDs fillID = new IDs();
         fillID.fill(usersArrayList, ids);
 
+        Name name = new Name();
+        name.fill(usersArrayList, names);
+
         BDays bDays = new BDays();
         bDays.fill(usersArrayList, bDates);
 
@@ -133,9 +163,7 @@ public class Main {
         sex.fill(usersArrayList, sexes);
 
 
-
-
-
+        pe= names.get(0)+ " " +names.get(1)+ " " + " " + bDates.get(0)+ " "+bDates.get(1);
 
         HashMap<String, ArrayList<ZodiacsPairs>> zodiacsCompatibilities =
                 new ZodiacLoading().getCompatibilities();
@@ -178,27 +206,23 @@ public class Main {
             }
         }
 
-        pe = compatibilityDescription.get(1);
 
-//return null;
         // audios
 
-//        Audios audios = new Audios();
-//        ArrayList<ArrayList<String>> usersAudios = audios.getAudios(usersArrayList, vk, accessToken);
-//        audios.fill(usersArrayList, usersAudios);
-//
-//
-//
-//        //database
-//
-//        DBWorker dbWorker = new DBWorker();
-//
-//        ArrayList<MusicGroups> groupsDatabase = new ArrayList<MusicGroups>();
-//
-//        String query = "select * from groups";
-//
-//        try {
-//            Statement statement = dbWorker.getConnection().createStatement();
+        Audio audio = new Audio();
+        audio.fill(usersArrayList, audios);
+
+
+        //database
+
+        DBWorker dbWorker = new DBWorker();
+
+        ArrayList<MusicGroups> groupsDatabase = new ArrayList<MusicGroups>();
+
+        String query = "select * from groups";
+
+        try {
+            Statement statement = dbWorker.getConnection().createStatement();
 //            ResultSet resultSet = statement.executeQuery(query);
 //
 //            while (resultSet.next()) {
@@ -210,23 +234,23 @@ public class Main {
 //
 //                groupsDatabase.add(musicGroups);
 //
-////                for(String s : musicGroups.getGenres()){
-////                    System.out.println(s);
-////                }
+//                for(String s : musicGroups.getGenres()){
+//                    System.out.println(s);
+//                }
 //            }
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//
-//
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
 //
 //        Genres genres = new Genres();
 //        genres.fill(usersArrayList, groupsDatabase);
 //
 //
+//        setCompatibilityByAudios(new Compatibility().getCompatibility(usersArrayList));
 //
-//        new Compatibility().getCompatibility(usersArrayList);
+//        pe=compatibilityByAudios.get(0);
+
+
     }
-
-
 }

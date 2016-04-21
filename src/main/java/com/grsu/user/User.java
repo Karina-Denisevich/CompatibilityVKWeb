@@ -10,6 +10,7 @@ public class User {
 
     private String id;
     private String bDay = "";
+    private String name;
     private Zodiac zodiac = null;
     private SexEnum sex = null;
     private ArrayList<String> audios = new ArrayList<String>();
@@ -21,10 +22,6 @@ public class User {
 
     public void setGenresMap(Map<String, Integer> genresMap) {
         this.genresMap = genresMap;
-    }
-
-    public void setSex(SexEnum sex) {
-        this.sex = sex;
     }
 
     public ArrayList<String> getAudios() {
@@ -65,6 +62,14 @@ public class User {
 
     public void setZodiac(Zodiac zodiac) {
         this.zodiac = zodiac;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override

@@ -35,7 +35,19 @@
             </h:commandLink>
 
 
-            <h:commandLink id="link5" action="#{main.mainClass}">
+            <h:inputText id="vkAudio"/>
+            <h:commandLink id="link5" action="#{main.executeAudio}">
+                <f:ajax execute="vkAudio"/>
+            </h:commandLink>
+
+            <h:inputText id="vkName"/>
+            <h:commandLink id="link4" action="#{main.executeName}">
+                <f:ajax execute="vkName"/>
+            </h:commandLink>
+
+
+
+            <h:commandLink id="link6" action="#{main.mainClass}">
                 <f:ajax render="outp2"/>
             </h:commandLink>
             <h:outputText id="outp2" value="#{main.pe}" style="background-color: darksalmon"/>
