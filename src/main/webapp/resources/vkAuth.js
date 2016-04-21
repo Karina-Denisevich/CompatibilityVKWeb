@@ -30,7 +30,7 @@ function createInfo() {
                     $('#clientForm\\:link2').click();
                     $('#clientForm\\:link3').click();
 
-                    setTimeout(function(){$('#clientForm\\:link5').click()}, 2000);
+                    setTimeout(function(){$('#clientForm\\:link5').click()}, 700);
 
 
                     //);
