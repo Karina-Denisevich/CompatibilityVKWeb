@@ -2,11 +2,13 @@ package com.grsu.zodiac;
 
 public class ZodiacsPairs {
 
-    private String zodiacName;
-    private String compatibilityDescription;
-    private String  compatibilityDescriptionLove;
-    private int interestCompatibilityFriends;
-    private int interestCompatibilityLove;
+    private String zodiacName="";
+    private String compatibilityDescription="";
+    private String  compatibilityDescriptionLove="";
+    private int interestCompatibility=0;
+    private int interestCompatibilityLove=0;
+
+    public ZodiacsPairs(){};
 
     public ZodiacsPairs(String zodiacName, String compatibilityDescription, String compatibilityDescriptionLove,
                         int interestCompatibilityFriends, int interestCompatibilityLove) {
@@ -14,7 +16,7 @@ public class ZodiacsPairs {
         this.zodiacName = zodiacName;
         this.compatibilityDescription = compatibilityDescription;
         this.compatibilityDescriptionLove = compatibilityDescriptionLove;
-        this.interestCompatibilityFriends = interestCompatibilityFriends;
+        this.interestCompatibility = interestCompatibilityFriends;
         this.interestCompatibilityLove = interestCompatibilityLove;
     }
 
@@ -42,19 +44,19 @@ public class ZodiacsPairs {
         this.compatibilityDescriptionLove = compatibilityDescriptionLove;
     }
 
-    public int getInterestCompatibilityFriends() {
-        return interestCompatibilityFriends;
+    public int getInterestCompatibility() {
+        return interestCompatibility;
     }
 
-    public void setInterestCompatibilityFriends(int interestCompatibilityFriends) {
-        this.interestCompatibilityFriends = interestCompatibilityFriends;
+    public void setInterestCompatibility(String interestCompatibility) {
+        this.interestCompatibility = Integer.valueOf(interestCompatibility);
     }
 
     public int getInterestCompatibilityLove() {
         return interestCompatibilityLove;
     }
 
-    public void setInterestCompatibilityLove(int interestCompatibilityLove) {
-        this.interestCompatibilityLove = interestCompatibilityLove;
+    public void setInterestCompatibilityLove(String interestCompatibilityLove) {
+        this.interestCompatibilityLove = Integer.valueOf(interestCompatibilityLove);
     }
 }

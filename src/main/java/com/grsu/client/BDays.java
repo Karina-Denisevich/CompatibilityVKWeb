@@ -4,7 +4,7 @@ import com.grsu.user.User;
 
 import java.util.ArrayList;
 
-public class BDays  {
+public class BDays implements Filling<ArrayList<String>> {
 
     public void fill(ArrayList<User> user, ArrayList<String> bdates) {
 

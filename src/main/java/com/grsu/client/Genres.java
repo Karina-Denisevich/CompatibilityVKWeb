@@ -36,7 +36,6 @@ public class Genres implements Filling<ArrayList<MusicGroups>> {
                 }
 
             }
-
             anUsersArrayList.setGenresMap(gengesMap);
         }
     }

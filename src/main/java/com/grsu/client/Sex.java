@@ -5,7 +5,7 @@ import com.grsu.user.User;
 
 import java.util.ArrayList;
 
-public class Sex  {
+public class Sex implements Filling<ArrayList<String>> {
 
     public void fill(ArrayList<User> user, ArrayList<String> sex) {
 

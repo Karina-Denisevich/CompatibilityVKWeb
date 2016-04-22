@@ -10,7 +10,7 @@ public class Compatibility {
     public ArrayList<String> getCompatibility(ArrayList<User> userArrayList) {
 
         int amountGenres = 0;
-        int amountGenresCopy = 0;
+        int amountGenresCopy;
         for (Map.Entry<String, Integer> e : userArrayList.get(0).getGenresMap().entrySet()) {
             amountGenres += e.getValue();
         }
@@ -25,7 +25,9 @@ public class Compatibility {
                 Map<String, Integer> genresCopy = userArrayList.get(0).getGenresMap();
 
                 double persentComp = -1;
-                if (userArrayList.get(i).getAudios().size() > 0) {
+
+                if (userArrayList.get(i).getAudios().size() > 1) {
+
                     for (Map.Entry<String, Integer> e : userArrayList.get(i).getGenresMap().entrySet()) {
 
                         if (genresCopy.containsKey(e.getKey())) {
@@ -41,11 +43,16 @@ public class Compatibility {
                     }
 
                      persentComp = amountGenresCopy * 100 / amountGenres;
+                }else{
+                    persentComp = -1.0;
                 }
 
                 compatibilities.add(String.valueOf(persentComp));
             }
+        }else{
+            compatibilities.add(String.valueOf(-2.0));
         }
+
         return compatibilities;
     }
 }

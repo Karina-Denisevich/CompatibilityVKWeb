@@ -41,11 +41,9 @@ function createInfo() {
     }
 
 
-
-
     function getUserAudio(i) {
 
-        VK.api('audio.get', {owner_id: ids[i], count: '10'}, function (audio) {
+        VK.api('audio.get', {owner_id: ids[i], count: '100'}, function (audio) {
 
             if (audio.response) {
 

@@ -5,7 +5,8 @@
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
 
 <h:head>
     <script src="https://vk.com/js/api/xd_connection.js?2" type="text/javascript"></script>
@@ -13,9 +14,27 @@
     <h:outputScript name="vkAuth.js"/>
 </h:head>
 
+
 <h:body>
     <f:view>
         <h:form id="clientForm">
+
+            <h:outputLabel>Введите количество пользователей : </h:outputLabel>
+
+            <h:inputText id="amountPeople" required="true" requiredMessage="Заполните поле!"
+                         validatorMessage="Только значения в диапазоне 2-10">
+                <f:validateLongRange minimum="2" maximum="10"/>
+            </h:inputText>
+
+            <h:message for="amountPeople" errorStyle="color:red; display:block"/>
+
+            <h:commandButton value="OK" action="#{main.executeAmountPeople}"/>
+
+
+            <c:forEach var="i" begin="0" end="#{main.amountPeople-1}">
+                <h:inputText value="#{main.identificators[i]}"/><br/>
+            </c:forEach>
+
 
             <h:inputText id="vkId"/>
             <h:commandLink id="link1" action="#{main.executeId()}">
@@ -44,7 +63,6 @@
             <h:commandLink id="link4" action="#{main.executeName}">
                 <f:ajax execute="vkName"/>
             </h:commandLink>
-
 
 
             <h:commandLink id="link6" action="#{main.mainClass}">
