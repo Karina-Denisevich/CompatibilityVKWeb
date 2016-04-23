@@ -4,6 +4,17 @@ function createInfo() {
     var sexes = [];
     var bDates = [];
     var artists = [];
+    var identificsArr;
+    var identifics = "";
+
+    identificsArr = document.getElementsByClassName('vkIden');
+
+    for (var i = 0; i < identificsArr.length; i++) {
+        identifics += identificsArr[i].value;
+        if (i < identificsArr.length - 1) {
+            identifics += ', ';
+        }
+    }
 
     VK.init(function () {
             getUserInfoVK();
@@ -11,7 +22,7 @@ function createInfo() {
     );
 
     function getUserInfoVK() {
-        VK.api('users.get', {uids: '50181012, 133930656, nordicwarrior', fields: 'uid, sex, bdate'}
+        VK.api('users.get', {uids: identifics, fields: 'uid, sex, bdate'}
             , function f(r) {
 
                 if (r.response) {
@@ -62,7 +73,7 @@ function createInfo() {
 
             if (i < ids.length) {
                 getUserAudio(i);
-            }else{
+            } else {
                 $('#clientForm\\:link6').click();
             }
         });

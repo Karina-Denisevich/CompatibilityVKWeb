@@ -32,8 +32,12 @@
 
 
             <c:forEach var="i" begin="0" end="#{main.amountPeople-1}">
-                <h:inputText value="#{main.identificators[i]}"/><br/>
+                <h:inputText class="vkIden" value="#{main.identificators[i]}"/><br/>
+                <!--<input type="text" class="vkIden" value="#{main.identificators[i]}"/>-->
             </c:forEach>
+
+            <!--<h:commandButton id="link0" value="Ok" onclick="createInfo()"/>-->
+            <input type="button" value="OK1" onclick="createInfo()"/>
 
 
             <h:inputText id="vkId"/>
@@ -70,8 +74,6 @@
             </h:commandLink>
             <h:outputText id="outp2" value="#{main.pe}" style="background-color: darksalmon"/>
 
-
-            <input type="button" value="OK" onclick="createInfo()"/>
 
 
             <!--<h:inputText id="vkBdate" value="#{main.bDates}"/>-->

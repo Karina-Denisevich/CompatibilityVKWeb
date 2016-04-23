@@ -48,8 +48,6 @@ public class Main {
         HttpServletRequest request = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
         String txtProperty = request.getParameter("clientForm:amountPeople");
 
-       // request.getParameterValues()
-
         setAmountPeople(Integer.valueOf(txtProperty));
         identificators = new String[Integer.valueOf(txtProperty)];
     }
@@ -65,14 +63,16 @@ public class Main {
         this.identificators = identificators;
     }
 
-    //
-//    public void executeIdentificator {
-//        HttpServletRequest request = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
-//        String txtProperty = request.getParameter("clientForm:vkId");
-//
-//        setIds(txtProperty);
-//    }
 
+//    public void executeIdentificator (){
+//        HttpServletRequest request = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
+//        String[] txtProperty = request.getParameterValues("clientForm:Vkiden");
+//
+//        System.out.println(request.getParameter("clientForm:Vkiden"));
+//
+//
+//        setIdentificators(txtProperty);
+//    }
 
 
     public void executeId() {
