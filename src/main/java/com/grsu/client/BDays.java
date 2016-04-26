@@ -8,7 +8,7 @@ public class BDays implements Filling<ArrayList<String>> {
 
     public void fill(ArrayList<User> user, ArrayList<String> bdates) {
 
-        for (int i = 0; i < user.size(); i++) {
+        for (int i = 0; i < bdates.size(); i++) {
 
             user.get(i).setbDay(bdates.get(i));
         }

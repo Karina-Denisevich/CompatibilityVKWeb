@@ -20,7 +20,7 @@ public class GroupDataBase {
             connection = DriverManager.getConnection(DB_URL, USER_NAME, PASSWORD);
 
             statement = connection.createStatement();
-            String sql = "select * from groups";
+            String sql = "select * from musicgroups";
             ResultSet resultSet = statement.executeQuery(sql);
 
 

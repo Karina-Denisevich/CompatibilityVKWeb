@@ -1,4 +1,4 @@
-function createInfo() {
+function createInfo() { //add
     var ids = [];
     var names = [];
     var sexes = [];
@@ -6,6 +6,7 @@ function createInfo() {
     var artists = [];
     var identificsArr;
     var identifics = "";
+
 
     identificsArr = document.getElementsByClassName('vkIden');
 
@@ -17,13 +18,12 @@ function createInfo() {
     }
 
     VK.init(function () {
-            getUserInfoVK();
+         getUserInfoVK();
         }
     );
 
     function getUserInfoVK() {
-        VK.api('users.get', {uids: identifics, fields: 'uid, sex, bdate'}
-            , function f(r) {
+        VK.api('users.get', {uids: identifics, fields: 'uid, sex, bdate'}, function f(r) {
 
                 if (r.response) {
 
@@ -75,6 +75,11 @@ function createInfo() {
                 getUserAudio(i);
             } else {
                 $('#clientForm\\:link6').click();
+                setTimeout(function() {
+                    window.open("index1.xhtml", "_self");
+
+                }, 500);
+                //add
             }
         });
     }

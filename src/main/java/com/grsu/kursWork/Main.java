@@ -29,7 +29,7 @@ import java.util.InputMismatchException;
 @SessionScoped
 public class Main {
 
-    private final String DB_URL = "jdbc:mysql://localhost:3306/musicgroups";
+    private final String DB_URL = "jdbc:mysql://localhost:3306/groups";
     private final String USER_NAME = "root";
     private final String PASSWORD = "root";
 
@@ -44,9 +44,10 @@ public class Main {
         this.amountPeople = amountPeople;
     }
 
-    public void executeAmountPeople() {
+    public void executeAmountPeople(){
         HttpServletRequest request = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
-        String txtProperty = request.getParameter("clientForm:amountPeople");
+        String txtProperty = request.getParameter("amountPeopleForm:amountPeople");
+
 
         setAmountPeople(Integer.valueOf(txtProperty));
         identificators = new String[Integer.valueOf(txtProperty)];
@@ -66,7 +67,7 @@ public class Main {
 
 //    public void executeIdentificator (){
 //        HttpServletRequest request = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
-//        String[] txtProperty = request.getParameterValues("clientForm:Vkiden");
+//        String[] txtProperty = request.getParameterValues("validForm:Vkiden");
 //
 //        System.out.println(request.getParameter("clientForm:Vkiden"));
 //
@@ -183,8 +184,7 @@ public class Main {
     }
 
 
-
-String pe = "kk";
+    private String pe = "kk";
 
     public String getPe() {
         return pe;
@@ -195,8 +195,6 @@ String pe = "kk";
     }
 
     public void mainClass() {
-
-        pe = identificators[0];
 
         ArrayList<User> usersArrayList = new ArrayList<User>();
 
@@ -225,7 +223,6 @@ String pe = "kk";
         for (int i = 0; i < usersArrayList.size() - 1; i++) {
             compatibilityDescription.add(compatZodList.get(i).getCompatibilityDescription());
             interestCompatibility.add(String.valueOf(compatZodList.get(i).getInterestCompatibility()));
-
         }
 
         // audios
@@ -240,5 +237,7 @@ String pe = "kk";
 
         setCompatibilityByAudios(new Compatibility().getCompatibility(usersArrayList));
 
+
+        pe = getCompatibilityByAudios().get(0);
     }
 }

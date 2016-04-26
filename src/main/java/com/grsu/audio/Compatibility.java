@@ -42,9 +42,13 @@ public class Compatibility {
                         amountGenresCopy -= e.getValue();
                     }
 
-                     persentComp = amountGenresCopy * 100 / amountGenres;
+                    if(amountGenres != 0) {
+                        persentComp = (amountGenres-amountGenresCopy) * 100 / amountGenres;
+                    }else{
+                        persentComp = 0;
+                    }
                 }else{
-                    persentComp = -1.0;
+                    persentComp = -2.0;
                 }
 
                 compatibilities.add(String.valueOf(persentComp));

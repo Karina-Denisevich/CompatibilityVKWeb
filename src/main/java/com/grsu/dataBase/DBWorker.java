@@ -17,6 +17,7 @@ public class DBWorker {
         try {
 
             connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
+
         }catch (SQLException ex){
 
             ex.printStackTrace();

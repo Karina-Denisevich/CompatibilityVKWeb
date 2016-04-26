@@ -8,7 +8,7 @@ public class Name implements Filling<ArrayList<String>>{
 
     public void fill(ArrayList<User> user, ArrayList<String> names) {
 
-        for (int i = 0; i < user.size(); i++) {
+        for (int i = 0; i < names.size(); i++) {
 
             user.get(i).setName(names.get(i));
         }
