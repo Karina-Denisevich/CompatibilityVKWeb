@@ -17,7 +17,7 @@ public class Compatibility {
 
         ArrayList<String> compatibilities = new ArrayList<String>();
 
-        if (userArrayList.get(0).getAudios().size() > 0) {
+        if (userArrayList.get(0).getAudios().size() > 1) {
 
             for (int i = 1; i < userArrayList.size(); i++) {
 

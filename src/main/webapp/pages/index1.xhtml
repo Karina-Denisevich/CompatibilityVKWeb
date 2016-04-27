@@ -43,7 +43,6 @@
                 <h:inputText class="vkIden" value="#{main.identificators[i]}"/>
                 <br/>
             </c:forEach>
-
             <input value="Ok1" type="submit"/>
         </h:form>
 
@@ -83,7 +82,7 @@
             <h:commandLink id="link6" action="#{main.mainClass}">
                 <f:ajax render="outp2"/>
             </h:commandLink>
-           <h:inputHidden id="outp2"/>
+           <h:inputText id="outp2"/>
 
         </h:form>
 

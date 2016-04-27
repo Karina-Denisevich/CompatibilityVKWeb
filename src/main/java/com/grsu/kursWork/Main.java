@@ -162,7 +162,7 @@ public class Main {
     }
 
 
-    private ArrayList<String> compatibilityByAudios;
+    private ArrayList<String> compatibilityByAudios = new ArrayList<String>();
 
     public ArrayList<String> getCompatibilityByAudios() {
         return compatibilityByAudios;
@@ -173,7 +173,7 @@ public class Main {
     }
 
 
-    private ArrayList<String> resultCompatibility;
+    private ArrayList<String> resultCompatibility = new ArrayList<String>();
 
     public ArrayList<String> getResultCompatibility() {
         return resultCompatibility;
@@ -230,6 +230,22 @@ public class Main {
 
         setCompatibilityByAudios(new Compatibility().getCompatibility(usersArrayList));
 
+        resultCompatibility = new ResultCompatibility().getResultComparibility(compatibilityByAudios, interestCompatibility);
 
+    }
+
+
+    public void clearAll(){
+
+        audios.clear();
+        ids.clear();
+        names.clear();
+        sexes.clear();
+        bDates.clear();
+        amountPeople = 0;
+        compatibilityDescription.clear();
+        compatibilityByAudios.clear();
+        interestCompatibility.clear();
+        resultCompatibility.clear();
     }
 }

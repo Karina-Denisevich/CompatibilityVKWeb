@@ -1,40 +1,32 @@
-//right
+/**
+ * Created by Karina on 27.04.2016.
+ */
 function f() {
-
     myBool = false;
 
     someActions(function () {
 
         if (myBool == false) {
-            alert('false at begin');
-
             createInfo();
-             return false;
+            return false;
 
         } else {
-            alert('true at begin');
             return true;
         }
 
     });
 
-    return myBool != false;
+    return myBool;
 }
 
 
 function someActions(callback) {
-
-    alert('it is somaact');
-    myBool = false;
-
 
     validate(function () {
         callback();
     });
 
 }
-
-
 
 function validate(callback1) {
     var iden = document.getElementsByClassName('vkIden');
@@ -48,40 +40,60 @@ function validate(callback1) {
         }
     }
 
+    var errors = " ";
+    var isEmptyField = false;
     VK.init(function () {
-            getUserInfoVK();
+            getUserInfoVK(0);
         }
     );
 
 
-    function getUserInfoVK() {
+    function getUserInfoVK(j) {
 
-        var errors = " ";
-
-        VK.api('users.get', {uids: id, fields: 'uid'}, function f(r) {
+        VK.api('users.get', {uids: iden[j].value, fields: 'uid'}, function f(r) {
 
             if (r.response) {
-
                 for (var i = 0; i < r.response.length; i++) {
 
                     if (r.response[i].deactivated == 'deleted'
                         || r.response[i].deactivated == 'banned') {
+
                         errors += r.response[i].uid + " ";
                         myBool = true;
                     }
                 }
 
-                if (myBool == true) {
-                    alert('Пользователей с данными id не существует : ' + errors);
+                if (r.response.length == 0) {
+                    alert('Заполните все поля!');
+                    myBool = true;
+                    isEmptyField = true;
+                    j = iden.length;
                 }
 
-                callback1();
 
-            }else{
+                if (j < iden.length - 1) {
+                    j++;
+                    getUserInfoVK(j);
+                } else {
+                    if (myBool == true && !isEmptyField) {
+                        alert('Пользователей с данными id не существует : ' + errors);
+                    }
+                    callback1();
+                }
 
+            } else {
                 myBool = true;
-                alert('Ошибка данных!');
-                callback1();
+                errors += iden[j].value + " ";
+
+                if (j < iden.length - 1) {
+                    j++;
+                    getUserInfoVK(j);
+                } else {
+                    if (myBool == true && !isEmptyField) {
+                        alert('Пользователей с данными id не существует : ' + errors + "!");
+                    }
+                    callback1();
+                }
             }
         });
     }

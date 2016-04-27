@@ -37,6 +37,12 @@
                 <br/>
             </c:forEach>
 
+            Результат :
+            <c:forEach var="i" begin="0" end="#{main.resultCompatibility.size()-1}">
+                <h:inputText class="compat" value="#{main.resultCompatibility[i]}"/>
+                <br/>
+            </c:forEach>
+
         </h:form>
 
 
