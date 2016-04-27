@@ -19,12 +19,77 @@
 <h:body>
     <f:view>
 
-       <h:form>
 
-           <h:inputText value="#{main.pe}"/>
-       </h:form>
+        <h:form id="amountPeopleForm">
+
+            <h:outputLabel>Введите количество пользователей : </h:outputLabel>
+
+            <h:inputText id="amountPeople" required="true" requiredMessage="Заполните поле!"
+                         validatorMessage="Только значения в диапазоне 2-10">
+                <f:validateLongRange minimum="2" maximum="10"/>
+            </h:inputText>
+
+            <h:message for="amountPeople" errorStyle="color:red; display:block"/>
+
+            <h:commandButton  value="OK" action="#{main.executeAmountPeople()}"/>
+
+        </h:form>
+
+
+
+        <h:form id="validForm" onsubmit="return f()">
+
+            <c:forEach var="i" begin="0" end="#{main.amountPeople-1}">
+                <h:inputText class="vkIden" value="#{main.identificators[i]}"/>
+                <br/>
+            </c:forEach>
+
+            <input value="Ok1" type="submit"/>
+        </h:form>
+
+
+
+        <h:form id="clientForm">
+
+            <h:inputText id="vkId"/>
+            <h:commandLink id="link1" action="#{main.executeId()}">
+                <f:ajax execute="vkId"/>
+            </h:commandLink>
+
+            <h:inputText id="vkBdate"/>
+            <h:commandLink id="link2" action="#{main.executeBdate()}">
+                <f:ajax execute="vkBdate"/>
+            </h:commandLink>
+
+
+            <h:inputText id="vkSex"/>
+            <h:commandLink id="link3" action="#{main.executeSex()}">
+                <f:ajax execute="vkSex"/>
+            </h:commandLink>
+
+
+            <h:inputText id="vkAudio"/>
+            <h:commandLink id="link5" action="#{main.executeAudio}">
+                <f:ajax execute="vkAudio"/>
+            </h:commandLink>
+
+
+            <h:inputText id="vkName"/>
+            <h:commandLink id="link4" action="#{main.executeName}">
+                <f:ajax execute="vkName"/>
+            </h:commandLink>
+
+
+            <h:commandLink id="link6" action="#{main.mainClass}">
+                <f:ajax render="outp2"/>
+            </h:commandLink>
+           <h:inputHidden id="outp2"/>
+
+        </h:form>
 
 
     </f:view>
+
 </h:body>
+
 </html>

@@ -24,7 +24,7 @@ public class Compatibility {
                 amountGenresCopy = amountGenres;
                 Map<String, Integer> genresCopy = userArrayList.get(0).getGenresMap();
 
-                double persentComp = -1;
+                double persentComp;
 
                 if (userArrayList.get(i).getAudios().size() > 1) {
 
@@ -42,19 +42,21 @@ public class Compatibility {
                         amountGenresCopy -= e.getValue();
                     }
 
-                    if(amountGenres != 0) {
-                        persentComp = (amountGenres-amountGenresCopy) * 100 / amountGenres;
-                    }else{
+                    if (amountGenres != 0) {
+                        persentComp = (amountGenres - amountGenresCopy) * 100 / amountGenres;
+                    } else {
                         persentComp = 0;
                     }
-                }else{
+                } else {
                     persentComp = -2.0;
                 }
 
                 compatibilities.add(String.valueOf(persentComp));
             }
-        }else{
-            compatibilities.add(String.valueOf(-2.0));
+        } else {
+            for (int i = 1; i < userArrayList.size(); i++) {
+                compatibilities.add(String.valueOf(-2.0));
+            }
         }
 
         return compatibilities;

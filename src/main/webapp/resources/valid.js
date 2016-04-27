@@ -7,10 +7,13 @@ function f() {
 
         if (myBool == false) {
             alert('false at begin');
+
             createInfo();
+             return false;
 
         } else {
             alert('true at begin');
+            return true;
         }
 
     });
@@ -34,9 +37,6 @@ function someActions(callback) {
 
 
 function validate(callback1) {
-
-    //var myBool = false;
-
     var iden = document.getElementsByClassName('vkIden');
     var id = "";
 
@@ -56,6 +56,8 @@ function validate(callback1) {
 
     function getUserInfoVK() {
 
+        var errors = " ";
+
         VK.api('users.get', {uids: id, fields: 'uid'}, function f(r) {
 
             if (r.response) {
@@ -64,25 +66,24 @@ function validate(callback1) {
 
                     if (r.response[i].deactivated == 'deleted'
                         || r.response[i].deactivated == 'banned') {
-                        alert('Пользователя с данным id не существует не существует : ' + id[i]);
+                        errors += r.response[i].uid + " ";
                         myBool = true;
                     }
                 }
 
-                if (myBool == false) {
-                    alert('false');
-
-                } else {
-                    alert('true');
+                if (myBool == true) {
+                    alert('Пользователей с данными id не существует : ' + errors);
                 }
 
+                callback1();
+
+            }else{
+
+                myBool = true;
+                alert('Ошибка данных!');
                 callback1();
             }
         });
     }
 
 }
-
-
-
-

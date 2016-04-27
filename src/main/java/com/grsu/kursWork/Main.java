@@ -65,17 +65,6 @@ public class Main {
     }
 
 
-//    public void executeIdentificator (){
-//        HttpServletRequest request = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
-//        String[] txtProperty = request.getParameterValues("validForm:Vkiden");
-//
-//        System.out.println(request.getParameter("clientForm:Vkiden"));
-//
-//
-//        setIdentificators(txtProperty);
-//    }
-
-
     public void executeId() {
         HttpServletRequest request = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
         String txtProperty = request.getParameter("clientForm:vkId");
@@ -184,14 +173,14 @@ public class Main {
     }
 
 
-    private String pe = "kk";
+    private ArrayList<String> resultCompatibility;
 
-    public String getPe() {
-        return pe;
+    public ArrayList<String> getResultCompatibility() {
+        return resultCompatibility;
     }
 
-    public void setPe(String pe) {
-        this.pe = pe;
+    public void setResultCompatibility(ArrayList<String> resultCompatibility) {
+        this.resultCompatibility = resultCompatibility;
     }
 
     public void mainClass() {
@@ -227,6 +216,10 @@ public class Main {
 
         // audios
 
+
+
+
+
         new Audio().fill(usersArrayList, audios);
 
         //database
@@ -238,6 +231,5 @@ public class Main {
         setCompatibilityByAudios(new Compatibility().getCompatibility(usersArrayList));
 
 
-        pe = getCompatibilityByAudios().get(0);
     }
 }

@@ -15,40 +15,39 @@ public class CompatibilityZodiac {
         ArrayList<ZodiacsPairs> zodiacsPairses = new ArrayList<ZodiacsPairs>();
 
 
-        if (!usersArrayList.get(0).getZodiac().name().equals("Unknown")) {
+        ArrayList<ZodiacsPairs> zodiacPairs = zodiacsCompatibilities.get(usersArrayList.get(0).getZodiac().name());
 
-            ArrayList<ZodiacsPairs> zodiacPairs = zodiacsCompatibilities.get(usersArrayList.get(0).getZodiac().name());
+        for (int i = 1; i < usersArrayList.size(); i++) {
 
-            for (int i = 1; i < usersArrayList.size(); i++) {
+            ZodiacsPairs oneZodPair = new ZodiacsPairs();
 
-                ZodiacsPairs oneZodPair = new ZodiacsPairs();
+            int amountZod = 0;
+            for (ZodiacsPairs pair : zodiacPairs) {
 
-                int amountZod = 0;
-                for (ZodiacsPairs pair : zodiacPairs) {
+                amountZod++;
+                if (pair.getZodiacName().equals(usersArrayList.get(i).getZodiac().name())) {
+                    amountZod = 0;
 
-                    amountZod++;
-                    if (pair.getZodiacName().equals(usersArrayList.get(i).getZodiac().name())) {
-
-                        if (!new Sex().isTheSameSex(usersArrayList.get(0).getSex(),
-                                usersArrayList.get(i).getSex())) {
+                    if (!new Sex().isTheSameSex(usersArrayList.get(0).getSex(),
+                            usersArrayList.get(i).getSex())) {
 
 
-                            oneZodPair.setCompatibilityDescription(pair.getCompatibilityDescriptionLove());
-                            oneZodPair.setInterestCompatibility(String.valueOf(pair.getInterestCompatibilityLove()));
-                        } else {
+                        oneZodPair.setCompatibilityDescription(pair.getCompatibilityDescriptionLove());
+                        oneZodPair.setInterestCompatibility(String.valueOf(pair.getInterestCompatibilityLove()));
+                    } else {
 
-                            oneZodPair.setCompatibilityDescription(pair.getCompatibilityDescription());
-                            oneZodPair.setInterestCompatibility(String.valueOf(pair.getInterestCompatibility()));
-                        }
+                        oneZodPair.setCompatibilityDescription(pair.getCompatibilityDescription());
+                        oneZodPair.setInterestCompatibility(String.valueOf(pair.getInterestCompatibility()));
                     }
                 }
-                if (amountZod == 12) {
-                    oneZodPair.setCompatibilityDescription("-");
-                    oneZodPair.setInterestCompatibility("0");
-                }
-
-                zodiacsPairses.add(oneZodPair);
             }
+            if (amountZod == 12) {
+                oneZodPair.setCompatibilityDescription("-");
+                oneZodPair.setInterestCompatibility("-1");
+
+            }
+
+            zodiacsPairses.add(oneZodPair);
         }
 
 

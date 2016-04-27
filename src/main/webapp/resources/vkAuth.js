@@ -18,7 +18,7 @@ function createInfo() { //add
     }
 
     VK.init(function () {
-         getUserInfoVK();
+            getUserInfoVK();
         }
     );
 
@@ -76,9 +76,9 @@ function createInfo() { //add
             } else {
                 $('#clientForm\\:link6').click();
                 setTimeout(function() {
-                    window.open("index1.xhtml", "_self");
+                    window.open("index2.xhtml", "_self");
 
-                }, 500);
+                }, 600);
                 //add
             }
         });
