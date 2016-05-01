@@ -27,8 +27,8 @@ public class GroupDataBase {
             while (resultSet.next()) {
                 MusicGroups musicGroups = new MusicGroups();
 
-                musicGroups.setGroupName(resultSet.getString(2));
-                musicGroups.setGenres(resultSet.getString(3));
+                musicGroups.setGroupName(resultSet.getString(1));
+                musicGroups.setGenres(resultSet.getString(2));
 
                 groupsDatabase.add(musicGroups);
             }

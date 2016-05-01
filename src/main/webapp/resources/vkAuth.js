@@ -54,7 +54,7 @@ function createInfo() { //add
 
     function getUserAudio(i) {
 
-        VK.api('audio.get', {owner_id: ids[i], count: '100'}, function (audio) {
+        VK.api('audio.get', {owner_id: ids[i], count: '300'}, function (audio) {
 
             if (audio.response) {
 
@@ -76,10 +76,9 @@ function createInfo() { //add
             } else {
                 $('#clientForm\\:link6').click();
                 setTimeout(function() {
-                    window.open("index2.xhtml", "_self");
+                    window.open("compatibilityTable.xhtml", "_self");
 
                 }, 600);
-                //add
             }
         });
     }

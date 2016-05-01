@@ -44,7 +44,7 @@ public class Main {
         this.amountPeople = amountPeople;
     }
 
-    public void executeAmountPeople(){
+    public void executeAmountPeople() {
         HttpServletRequest request = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
         String txtProperty = request.getParameter("amountPeopleForm:amountPeople");
 
@@ -114,6 +114,10 @@ public class Main {
 
     public ArrayList<String> getIds() {
         return ids;
+    }
+
+    public ArrayList<String> getNames() {
+        return names;
     }
 
     public void setNames(String names) {
@@ -217,9 +221,6 @@ public class Main {
         // audios
 
 
-
-
-
         new Audio().fill(usersArrayList, audios);
 
         //database
@@ -235,17 +236,17 @@ public class Main {
     }
 
 
-    public void clearAll(){
+    public void clearAll() {
 
-        audios.clear();
-        ids.clear();
-        names.clear();
-        sexes.clear();
-        bDates.clear();
+        audios = new ArrayList<ArrayList<String>>();
+        ids = new ArrayList<String>();
+        names = new ArrayList<String>();
+        sexes = new ArrayList<String>();
+        bDates = new ArrayList<String>();
         amountPeople = 0;
-        compatibilityDescription.clear();
-        compatibilityByAudios.clear();
-        interestCompatibility.clear();
-        resultCompatibility.clear();
+        compatibilityDescription = new ArrayList<String>();
+        compatibilityByAudios = new ArrayList<String>();
+        interestCompatibility = new ArrayList<String>();
+        resultCompatibility = new ArrayList<String>();
     }
 }

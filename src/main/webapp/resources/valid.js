@@ -1,6 +1,3 @@
-/**
- * Created by Karina on 27.04.2016.
- */
 function f() {
     myBool = false;
 
@@ -13,7 +10,6 @@ function f() {
         } else {
             return true;
         }
-
     });
 
     return myBool;

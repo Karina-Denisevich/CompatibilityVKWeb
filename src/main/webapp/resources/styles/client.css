@@ -1,0 +1,12 @@
+body{
+    padding: 10px;
+}
+
+#amountUsersLabel{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+}
+
+.idInput{
+    margin-bottom: 5px !important;
+}

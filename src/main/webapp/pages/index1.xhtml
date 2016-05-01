@@ -13,16 +13,24 @@
     <script src="https://code.jquery.com/jquery-2.2.3.min.js" type="text/javascript"></script>
     <h:outputScript name="vkAuth.js"/>
     <h:outputScript name="valid.js"/>
+    <link rel="stylesheet" type="text/css" href="/resources/styles/client.css"/>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
+
 </h:head>
 
 
 <h:body>
     <f:view>
 
-
         <h:form id="amountPeopleForm">
 
-            <h:outputLabel>Введите количество пользователей : </h:outputLabel>
+            <h:outputLabel id="amountUsersLabel">Введите количество пользователей : </h:outputLabel>
 
             <h:inputText id="amountPeople" required="true" requiredMessage="Заполните поле!"
                          validatorMessage="Только значения в диапазоне 2-10">
@@ -31,61 +39,71 @@
 
             <h:message for="amountPeople" errorStyle="color:red; display:block"/>
 
-            <h:commandButton  value="OK" action="#{main.executeAmountPeople()}"/>
+            <h:commandButton value="OK" action="#{main.executeAmountPeople()}"/>
 
         </h:form>
-
 
 
         <h:form id="validForm" onsubmit="return f()">
 
             <c:forEach var="i" begin="0" end="#{main.amountPeople-1}">
-                <h:inputText class="vkIden" value="#{main.identificators[i]}"/>
-                <br/>
+                <div class="input-group idInput">
+                    <span class="input-group-addon"></span>
+                    <input type="text" class="form-control vkIden" placeholder="ID" value="#{main.identificators[i]}"/>
+                </div>
             </c:forEach>
-            <input value="Ok1" type="submit"/>
-        </h:form>
 
+            <script type="text/javascript">
+                var el = document.getElementsByClassName('vkIden');
+                var el1 = document.getElementById('validForm');
+                if(el.length > 1){
+                    var inputEl = document.createElement('input');
+                    inputEl.className = 'btn btn-primary btn-large';
+                    inputEl.type='submit';
+                    inputEl.value = 'Узнать совместимость';
+                    el1.appendChild(inputEl);
+                }
+            </script>
+
+        </h:form>
 
 
         <h:form id="clientForm">
 
-            <h:inputText id="vkId"/>
+            <h:inputHidden id="vkId"/>
             <h:commandLink id="link1" action="#{main.executeId()}">
                 <f:ajax execute="vkId"/>
             </h:commandLink>
 
-            <h:inputText id="vkBdate"/>
+            <h:inputHidden id="vkBdate"/>
             <h:commandLink id="link2" action="#{main.executeBdate()}">
                 <f:ajax execute="vkBdate"/>
             </h:commandLink>
 
 
-            <h:inputText id="vkSex"/>
+            <h:inputHidden id="vkSex"/>
             <h:commandLink id="link3" action="#{main.executeSex()}">
                 <f:ajax execute="vkSex"/>
             </h:commandLink>
 
 
-            <h:inputText id="vkAudio"/>
+            <h:inputHidden id="vkAudio"/>
             <h:commandLink id="link5" action="#{main.executeAudio}">
                 <f:ajax execute="vkAudio"/>
             </h:commandLink>
 
 
-            <h:inputText id="vkName"/>
+            <h:inputHidden id="vkName"/>
             <h:commandLink id="link4" action="#{main.executeName}">
                 <f:ajax execute="vkName"/>
             </h:commandLink>
 
-
+            <h:inputHidden id="outp2"/>
             <h:commandLink id="link6" action="#{main.mainClass}">
                 <f:ajax render="outp2"/>
             </h:commandLink>
-           <h:inputText id="outp2"/>
 
         </h:form>
-
 
     </f:view>
 
