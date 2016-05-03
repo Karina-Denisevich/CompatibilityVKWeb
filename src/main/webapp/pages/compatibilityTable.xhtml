@@ -11,6 +11,8 @@
 <h:head>
     <script src="https://vk.com/js/api/xd_connection.js?2" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-2.2.3.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="/resources/styles/finalpage.css"/>
+
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -23,9 +25,8 @@
 <h:body>
     <f:view>
 
-
+        <h3 align="center">#{main.names[0]}</h3>
         <h:form id="formTable">
-
             <table class="table table-border">
                 <thead>
                 <tr>
@@ -51,15 +52,20 @@
                             <h:outputText class="compat" value="#{main.names[i+1]}"/>
                         </td>
 
-
-                        <td>
+                        <td class="column">
                             <h:outputText class="compat" value="#{main.interestCompatibility[i]}"/>
+                            <button type="button" id="txt">
+                                <span class="glyphicon glyphicon-chevron-down btn-down" aria-hidden="true"/>
+                                <div id="box">
+                                    <h:outputText class="compat" value="#{main.compatibilityDescription[i]}"/>
+                                </div>
+                            </button>
                         </td>
 
-                        <td>
+                        <td class="column">
                             <h:outputText class="compat" value="#{main.compatibilityByAudios[i]}"/>
                         </td>
-                        <td>
+                        <td class="column">
                             <h:outputText class="compat" value="#{main.resultCompatibility[i]}"/>
                         </td>
 
@@ -69,31 +75,9 @@
 
             </table>
 
-            <c:forEach var="i" begin="0" end="#{main.compatibilityByAudios.size()-1}">
-                <h:inputText class="compat" value="#{main.compatibilityByAudios[i]}"/>
-                <br/>
-            </c:forEach>
-
-            <c:forEach var="i" begin="0" end="#{main.compatibilityDescription.size()-1}">
-                <h:inputText class="compat" value="#{main.compatibilityDescription[i]}"/>
-                <br/>
-            </c:forEach>
-
-
-            <c:forEach var="i" begin="0" end="#{main.interestCompatibility.size()-1}">
-                <h:inputText class="compat" value="#{main.interestCompatibility[i]}"/>
-                <br/>
-            </c:forEach>
-
-            Результат :
-            <c:forEach var="i" begin="0" end="#{main.resultCompatibility.size()-1}">
-                <h:inputText class="compat" value="#{main.resultCompatibility[i]}"/>
-                <br/>
-            </c:forEach>
-
         </h:form>
 
-
     </f:view>
+
 </h:body>
 </html>

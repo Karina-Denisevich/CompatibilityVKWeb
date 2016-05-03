@@ -249,4 +249,13 @@ public class Main {
         interestCompatibility = new ArrayList<String>();
         resultCompatibility = new ArrayList<String>();
     }
+
+    public void clearInfo() {
+
+        audios = new ArrayList<ArrayList<String>>();
+        ids = new ArrayList<String>();
+        sexes = new ArrayList<String>();
+        bDates = new ArrayList<String>();
+        amountPeople = 0;
+    }
 }

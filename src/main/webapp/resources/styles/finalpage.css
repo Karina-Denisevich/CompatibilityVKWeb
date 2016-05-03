@@ -1,0 +1,26 @@
+.column {
+    text-align: center;
+}
+
+.btn-down{
+    text-decoration-color: aqua;
+}
+
+#txt {
+    position: relative !important;
+    height: 22px !important;
+    width: 30px;
+}
+
+#box {
+    position: absolute;
+    top: 100%;
+    left: 27px;
+    background-color: lightblue;
+    font-size: 12px;
+    display: none;
+}
+
+#txt:hover > #box {
+    display: block;
+}
