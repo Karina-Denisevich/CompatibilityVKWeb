@@ -45,7 +45,8 @@ public enum Zodiac {
 
     private boolean isInRange(Date date) {
 
-        return date.before(secondDate) && date.after(firstDate);
+        return date.before(secondDate) && date.after(firstDate) || date.equals(secondDate)
+                || date.equals(firstDate);
     }
 
     public static Zodiac getZodiac(String value) {

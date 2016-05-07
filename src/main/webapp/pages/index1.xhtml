@@ -27,44 +27,60 @@
 <h:body>
     <f:view>
 
-        <h:form id="amountPeopleForm">
+        <div id="main">
 
-            <h:outputLabel id="amountUsersLabel">Введите количество пользователей : </h:outputLabel>
-
-            <h:inputText id="amountPeople" required="true" requiredMessage="Заполните поле!"
-                         validatorMessage="Только значения в диапазоне 2-10">
-                <f:validateLongRange minimum="2" maximum="10"/>
-            </h:inputText>
-
-            <h:message for="amountPeople" errorStyle="color:red; display:block"/>
-
-            <h:commandButton value="OK" action="#{main.executeAmountPeople()}"/>
-
-        </h:form>
+            <h:form id="amountPeopleForm">
 
 
-        <h:form id="validForm" onsubmit="return f()">
-            <c:forEach var="i" begin="0" end="#{main.amountPeople-1}">
-                <div class="input-group idInput">
-                    <span class="input-group-addon">${i+1}</span>
-                    <input type="text" class="form-control vkIden" placeholder="ID"
-                           value="#{main.identificators[i]}"/>
-                </div>
-            </c:forEach>
+
+                <h:outputLabel id="amountUsersLabel">Введите количество пользователей : </h:outputLabel>
+
+                <h:inputText class="form-control input-amount" id="amountPeople" required="true"
+                             requiredMessage="Заполните поле!"
+                             validatorMessage="Только значения в диапазоне 2-20">
+                    <f:validateLongRange minimum="2" maximum="20"/>
+                </h:inputText>
+
+                <h:message for="amountPeople" errorStyle="color:red; display:block"/>
+
+                <h:commandButton class="btn btn-primary button-amount" value="OK"
+                                 action="#{main.executeAmountPeople()}"/>
+
+            </h:form>
 
 
-            <script type="text/javascript">
-                var el = document.getElementsByClassName('vkIden');
-                var el1 = document.getElementById('validForm');
-                if (el.length > 1) {
-                    var inputEl = document.createElement('input');
-                    inputEl.className = 'btn btn-primary btn-large';
-                    inputEl.type = 'submit';
-                    inputEl.value = 'Узнать совместимость';
-                    el1.appendChild(inputEl);
-                }
-            </script>
-        </h:form>
+            <h:form id="validForm" onsubmit="return f()">
+
+                <c:forEach var="i" begin="0" end="#{main.amountPeople-1}">
+                    <div class="input-group idInput">
+                        <span class="input-group-addon">${i+1}</span>
+                        <input type="text" class="form-control vkIden" placeholder="ID"
+                               value="#{main.identificators[i]}"/>
+                    </div>
+                </c:forEach>
+
+
+                <script type="text/javascript">
+                    var el = document.getElementsByClassName('vkIden');
+                    var el1 = document.getElementById('validForm');
+                    if (el.length > 1) {
+                        var inputEl = document.createElement('input');
+                        inputEl.className = 'btn btn-primary btn-large';
+                        inputEl.type = 'submit';
+                        inputEl.value = 'Узнать совместимость';
+                        el1.appendChild(inputEl);
+                    }
+                </script>
+            </h:form>
+
+        </div>
+
+        <div id="footer">
+
+            <hr></hr>
+            <p class="text-muted credit foot">© Denisevich K.S. 2016</p>
+
+        </div>
 
 
         <h:form id="clientForm">

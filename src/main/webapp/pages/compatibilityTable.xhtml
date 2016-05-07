@@ -26,56 +26,72 @@
     <f:view>
 
         <h3 align="center">#{main.names[0]}</h3>
-        <h:form id="formTable">
-            <table class="table table-border">
-                <thead>
-                <tr>
-                    <th>
-                        Имя
-                    </th>
-                    <th>
-                        Совместимость по знаку зодиака
-                    </th>
-                    <th>
-                        Совместимость по аудиозаписям
-                    </th>
-                    <th>
-                        Результат
-                    </th>
-                </tr>
-                </thead>
-
-                <tbody>
-                <c:forEach var="i" begin="0" end="#{main.interestCompatibility.size()-1}">
+        <div id="main">
+            <h:form id="formTable">
+                <table class="table table-border">
+                    <thead>
                     <tr>
-                        <td>
-                            <h:outputText class="compat" value="#{main.names[i+1]}"/>
-                        </td>
-
-                        <td class="column">
-                            <h:outputText class="compat" value="#{main.interestCompatibility[i]}"/>
-                            <button type="button" id="txt">
-                                <span class="glyphicon glyphicon-chevron-down btn-down" aria-hidden="true"/>
-                                <div id="box">
-                                    <h:outputText class="compat" value="#{main.compatibilityDescription[i]}"/>
-                                </div>
-                            </button>
-                        </td>
-
-                        <td class="column">
-                            <h:outputText class="compat" value="#{main.compatibilityByAudios[i]}"/>
-                        </td>
-                        <td class="column">
-                            <h:outputText class="compat" value="#{main.resultCompatibility[i]}"/>
-                        </td>
-
+                        <th>
+                            Имя
+                        </th>
+                        <th>
+                            Совместимость по знаку зодиака
+                        </th>
+                        <th>
+                            Совместимость по аудиозаписям
+                        </th>
+                        <th>
+                            Результат
+                        </th>
                     </tr>
-                </c:forEach>
-                </tbody>
+                    </thead>
 
-            </table>
+                    <tbody>
+                    <c:forEach var="i" begin="0" end="#{main.interestCompatibility.size()-1}">
+                        <tr>
+                            <td>
+                                <h:outputText class="compat" value="#{main.names[i+1]}"/>
+                            </td>
 
-        </h:form>
+                            <td class="column">
+                                <h:outputText class="compat" value="#{main.interestCompatibility[i]}"/>
+                                <button type="button" id="txt">
+                                    <span class="glyphicon glyphicon-chevron-down btn-down" aria-hidden="true"/>
+                                    <div id="box">
+                                        <h:outputText class="compat" value="#{main.compatibilityDescription[i]}"/>
+                                    </div>
+                                </button>
+                            </td>
+
+                            <td class="column">
+                                <h:outputText class="compat" value="#{main.compatibilityByAudios[i]}"/>
+                            </td>
+                            <td class="column">
+                                <h:outputText class="compat" value="#{main.resultCompatibility[i]}"/>
+                            </td>
+
+                        </tr>
+                    </c:forEach>
+                    </tbody>
+
+
+                </table>
+
+            </h:form>
+
+            <p>
+                <a class="btn btn-primary btn-large onwards"  href="/pages/index.xhtml">
+                    В начало
+                </a>
+            </p>
+        </div>
+
+        <div id="footer">
+
+            <hr></hr>
+            <p class="text-muted credit foot">© Denisevich K.S. 2016</p>
+
+        </div>
 
     </f:view>
 

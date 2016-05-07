@@ -13,8 +13,6 @@ public class Zodiacs implements Filling<ArrayList<Zodiac>> {
 
             usersArrayList.get(i).setZodiac(zodiacs.get(i));
         }
-
-
     }
 
     public ArrayList<Zodiac> getZodiacs(ArrayList<User> usersArrayList) {

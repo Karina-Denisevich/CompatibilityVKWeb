@@ -1,5 +1,7 @@
 function f() {
     myBool = false;
+    errors = " ";
+    isEmptyField = false;
 
     someActions(function () {
 
@@ -36,8 +38,7 @@ function validate(callback1) {
         }
     }
 
-    var errors = " ";
-    var isEmptyField = false;
+
     VK.init(function () {
             getUserInfoVK(0);
         }
@@ -47,7 +48,6 @@ function validate(callback1) {
     function getUserInfoVK(j) {
 
         VK.api('users.get', {uids: iden[j].value, fields: 'uid'}, function f(r) {
-
             if (r.response) {
                 for (var i = 0; i < r.response.length; i++) {
 

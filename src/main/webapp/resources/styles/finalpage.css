@@ -24,3 +24,22 @@
 #txt:hover > #box {
     display: block;
 }
+
+.foot{
+    margin-left: 4px !important;
+}
+
+.foot {
+    margin-left: 4px !important;
+}
+
+#footer {
+    height: 90px;
+}
+
+#main {
+    display: block;
+    height: 418px;
+    width: 100%;
+    overflow: auto;
+}
