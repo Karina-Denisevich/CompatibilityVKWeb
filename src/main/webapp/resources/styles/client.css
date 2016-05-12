@@ -39,3 +39,23 @@
     padding: 10px;
     overflow: auto;
 }
+
+#mainU{
+    width: 180px !important;
+    margin-left: 200px !important;
+}
+
+.btn-add{
+    border: 0 !important;
+    font-size: 30px !important;
+    margin-left: -20px !important;
+    margin-top: -10px !important;
+}
+
+.idInput{
+    width: 300px !important;
+}
+
+.span-add{
+    color: royalblue !important;
+}

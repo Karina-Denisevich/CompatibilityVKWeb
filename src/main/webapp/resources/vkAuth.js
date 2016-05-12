@@ -1,4 +1,5 @@
-function createInfo() { //add
+function createInfo() {
+
     var ids = [];
     var names = [];
     var sexes = [];
@@ -6,7 +7,6 @@ function createInfo() { //add
     var artists = [];
     var identificsArr;
     var identifics = "";
-
 
     identificsArr = document.getElementsByClassName('vkIden');
 
@@ -16,6 +16,7 @@ function createInfo() { //add
             identifics += ', ';
         }
     }
+
 
     VK.init(function () {
             getUserInfoVK();

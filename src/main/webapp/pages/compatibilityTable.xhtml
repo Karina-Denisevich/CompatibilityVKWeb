@@ -35,13 +35,13 @@
                             Имя
                         </th>
                         <th>
-                            Совместимость по знаку зодиака
+                            Совместимость по знаку зодиака, %
                         </th>
                         <th>
-                            Совместимость по аудиозаписям
+                            Совместимость по аудиозаписям, %
                         </th>
                         <th>
-                            Результат
+                            Результат, %
                         </th>
                     </tr>
                     </thead>
@@ -77,7 +77,17 @@
 
                 </table>
 
+                <h:inputHidden id="outp2"/>
+                <h:commandLink id="clear" action="#{main.clearAll}">
+                    <f:ajax render="outp2"/>
+                </h:commandLink>
+
+                <script type="text/javascript">
+                    $('#formTable\\:clear').click();
+                </script>
+
             </h:form>
+
 
             <p>
                 <a class="btn btn-primary btn-large onwards"  href="/pages/index.xhtml">

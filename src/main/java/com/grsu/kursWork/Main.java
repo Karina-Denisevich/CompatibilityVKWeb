@@ -21,6 +21,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.InputMismatchException;
 
@@ -32,37 +33,6 @@ public class Main {
     private final String DB_URL = "jdbc:mysql://localhost:3306/groups";
     private final String USER_NAME = "root";
     private final String PASSWORD = "root";
-
-
-    private Integer amountPeople = 0;
-
-    public Integer getAmountPeople() {
-        return amountPeople;
-    }
-
-    public void setAmountPeople(Integer amountPeople) {
-        this.amountPeople = amountPeople;
-    }
-
-    public void executeAmountPeople() {
-        HttpServletRequest request = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
-        String txtProperty = request.getParameter("amountPeopleForm:amountPeople");
-
-
-        setAmountPeople(Integer.valueOf(txtProperty));
-        identificators = new String[Integer.valueOf(txtProperty)];
-    }
-
-
-    String[] identificators;
-
-    public String[] getIdentificators() {
-        return identificators;
-    }
-
-    public void setIdentificators(String[] identificators) {
-        this.identificators = identificators;
-    }
 
 
     public void executeId() {
@@ -109,7 +79,11 @@ public class Main {
 
 
     public void setIds(String ids) {
-        this.ids = new Parsing().parse(ids);
+        ArrayList<String> list = new Parsing().parse(ids);
+
+        for (String aList : list) {
+            this.ids.add(aList);
+        }
     }
 
     public ArrayList<String> getIds() {
@@ -121,11 +95,19 @@ public class Main {
     }
 
     public void setNames(String names) {
-        this.names = new Parsing().parse(names);
+        ArrayList<String> list = new Parsing().parse(names);
+
+        for (String aList : list) {
+            this.names.add(aList);
+        }
     }
 
     public void setbDates(String bDates) {
-        this.bDates = new Parsing().parse(bDates);
+        ArrayList<String> list = new Parsing().parse(bDates);
+
+        for (String aList : list) {
+            this.bDates.add(aList);
+        }
     }
 
     public ArrayList<String> getbDates() {
@@ -133,7 +115,11 @@ public class Main {
     }
 
     public void setSexes(String sexes) {
-        this.sexes = new Parsing().parse(sexes);
+        ArrayList<String> list = new Parsing().parse(sexes);
+
+        for (String aList : list) {
+            this.sexes.add(aList);
+        }
     }
 
     public ArrayList<String> getSexes() {
@@ -243,19 +229,9 @@ public class Main {
         names = new ArrayList<String>();
         sexes = new ArrayList<String>();
         bDates = new ArrayList<String>();
-        amountPeople = 0;
         compatibilityDescription = new ArrayList<String>();
         compatibilityByAudios = new ArrayList<String>();
         interestCompatibility = new ArrayList<String>();
         resultCompatibility = new ArrayList<String>();
-    }
-
-    public void clearInfo() {
-
-        audios = new ArrayList<ArrayList<String>>();
-        ids = new ArrayList<String>();
-        sexes = new ArrayList<String>();
-        bDates = new ArrayList<String>();
-        amountPeople = 0;
     }
 }

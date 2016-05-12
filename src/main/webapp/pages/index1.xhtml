@@ -7,12 +7,17 @@
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
       xmlns:c="http://java.sun.com/jsp/jstl/core">
+
 <h:head>
     <script src="https://vk.com/js/api/xd_connection.js?2" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-2.2.3.min.js" type="text/javascript"></script>
     <h:outputScript name="vkAuth.js"/>
     <h:outputScript name="valid.js"/>
+    <h:outputScript name="validFirst.js"/>
+    <h:outputScript name="vkSearchUser.js"/>
+    <h:outputScript name="validAndAdd.js"/>
     <link rel="stylesheet" type="text/css" href="/resources/styles/client.css"/>
+
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -29,55 +34,77 @@
 
         <div id="main">
 
-            <h:form id="amountPeopleForm">
+            <div id="first">
 
+                <h:form id="firstChoise" onsubmit="return f1()">
 
+                    <h:outputLabel id="mainUser">Выберите по кому будет проводиться сравнение : </h:outputLabel>
+                    <br/>
 
-                <h:outputLabel id="amountUsersLabel">Введите количество пользователей : </h:outputLabel>
+                    <input id="radioMe" type="radio" name="group1" onclick="hideShow()" checked="checked"/>
+                    <label for="radioMe">По себе</label>
+                    <br/>
 
-                <h:inputText class="form-control input-amount" id="amountPeople" required="true"
-                             requiredMessage="Заполните поле!"
-                             validatorMessage="Только значения в диапазоне 2-20">
-                    <f:validateLongRange minimum="2" maximum="20"/>
-                </h:inputText>
+                    <input id="radioOther" type="radio" name="group1" onclick="hideShow()"/>
+                    <label for="radioOther">По другому пользователю</label>
+                    <br/>
 
-                <h:message for="amountPeople" errorStyle="color:red; display:block"/>
-
-                <h:commandButton class="btn btn-primary button-amount" value="OK"
-                                 action="#{main.executeAmountPeople()}"/>
-
-            </h:form>
-
-
-            <h:form id="validForm" onsubmit="return f()">
-
-                <c:forEach var="i" begin="0" end="#{main.amountPeople-1}">
-                    <div class="input-group idInput">
-                        <span class="input-group-addon">${i+1}</span>
-                        <input type="text" class="form-control vkIden" placeholder="ID"
-                               value="#{main.identificators[i]}"/>
+                    <div id="another-input" style="display: none">
+                        <h:outputLabel>Введите id пользователя : </h:outputLabel>
+                        <input class="form-control input-amount" placeholder="ID" id="mainU"/>
                     </div>
-                </c:forEach>
+                    <br/>
 
+                    <input type="submit" class="btn btn-primary" value="OK"/>
+                </h:form>
 
                 <script type="text/javascript">
-                    var el = document.getElementsByClassName('vkIden');
-                    var el1 = document.getElementById('validForm');
-                    if (el.length > 1) {
-                        var inputEl = document.createElement('input');
-                        inputEl.className = 'btn btn-primary btn-large';
-                        inputEl.type = 'submit';
-                        inputEl.value = 'Узнать совместимость';
-                        el1.appendChild(inputEl);
-                    }
-                </script>
-            </h:form>
 
+                    function hideShow() {
+                        if (document.getElementById('radioMe').checked) {
+
+                            document.getElementById('another-input').style.display = 'none';
+                        } else {
+                            document.getElementById('another-input').style.display = 'block';
+                        }
+                    }
+
+                </script>
+
+            </div>
+
+            <div id="second" style="display: none">
+
+                <h:outputLabel>
+                    Введите id пользователей, с которыми желаете провести сравнение.
+                </h:outputLabel>
+
+                <h:form id="validForm" onsubmit="return f()">
+
+                    <div class="idDiv" style="display: flex">
+
+                        <div class="input-group idInput">
+                            <span class="input-group-addon">1</span>
+                            <input type="text" class="form-control vkIden" placeholder="ID"/>
+                        </div>
+
+                        <div class="button-add">
+                            <button type="button" class="btn btn-default btn-lg btn-add" onclick="add()">
+                                <span class="glyphicon glyphicon-plus-sign span-add"/>
+                            </button>
+                        </div>
+                    </div>
+
+                    <input type="submit" class='btn btn-primary btn-large submitResult'
+                           value="Узнать совместимость"/>
+
+                </h:form>
+            </div>
         </div>
 
         <div id="footer">
 
-            <hr></hr>
+            <hr/>
             <p class="text-muted credit foot">© Denisevich K.S. 2016</p>
 
         </div>
