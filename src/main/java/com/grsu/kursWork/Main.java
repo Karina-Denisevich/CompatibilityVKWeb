@@ -15,6 +15,9 @@ import java.sql.*;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
+import javax.faces.event.AjaxBehaviorEvent;
+import javax.faces.event.ValueChangeEvent;
+import javax.faces.event.ValueChangeListener;
 import javax.servlet.http.HttpServletRequest;
 import javax.sql.DataSource;
 import java.sql.ResultSet;
@@ -41,6 +44,7 @@ public class Main {
 
         setIds(txtProperty);
     }
+
 
     public void executeName() {
         HttpServletRequest request = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();

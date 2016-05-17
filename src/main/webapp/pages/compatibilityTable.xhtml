@@ -35,13 +35,13 @@
                             Имя
                         </th>
                         <th>
-                            Совместимость по знаку зодиака, %
+                            Совместимость по знаку зодиака
                         </th>
                         <th>
-                            Совместимость по аудиозаписям, %
+                            Совместимость по аудиозаписям
                         </th>
                         <th>
-                            Результат, %
+                            Результат
                         </th>
                     </tr>
                     </thead>
@@ -54,28 +54,68 @@
                             </td>
 
                             <td class="column">
-                                <h:outputText class="compat" value="#{main.interestCompatibility[i]}"/>
-                                <button type="button" id="txt">
-                                    <span class="glyphicon glyphicon-chevron-down btn-down" aria-hidden="true"/>
-                                    <div id="box">
-                                        <h:outputText class="compat" value="#{main.compatibilityDescription[i]}"/>
-                                    </div>
-                                </button>
+                                <h:outputText class="compat" value="#{main.interestCompatibility[i]}%"
+                                              style="font-size: 16px"/>
+
+                                <div class="divSmallTxt" style="display: block">
+                                    <h:outputText class="smallTxt"/>
+                                    <a href="#" class="link"/>
+                                </div>
+
+                                <div class="infoZodiac" style="display: none">
+                                    <h:outputText class="compat zodiacOutput"
+                                                  value="#{main.compatibilityDescription[i]}"/>
+                                    <a href="#" class="turn">Свернуть</a>
+                                </div>
+
+                                <script type="text/javascript">
+
+                                    var output = document.getElementsByClassName('compat zodiacOutput');
+                                    var txt = output[output.length - 1].firstChild.data;
+                                    var a = document.getElementsByClassName('link');
+                                    var aTurn = document.getElementsByClassName('turn');
+                                    var elementToHide = document.getElementsByClassName('divSmallTxt');
+                                    var elementToShow = document.getElementsByClassName('infoZodiac');
+
+                                    if (txt != '-') {
+
+                                        var smallTxt = txt.substr(0, 12);
+                                        $('.smallTxt').eq(output.length - 1).text(smallTxt);
+
+                                        var linkText = document.createTextNode("...Подробнее");
+                                        a[a.length - 1].appendChild(linkText);
+                                        a[a.length - 1].title = "...Подробнее";
+
+                                        a[a.length-1].onclick = function(){
+                                            elementToHide[$(this).index(".link")].style.display = 'none';
+                                            elementToShow[$(this).index(".link")].style.display = 'block';
+
+                                        };
+                                        aTurn[aTurn.length-1].onclick = function(){
+                                            elementToHide[$(this).index(".turn")].style.display = 'block';
+                                            elementToShow[$(this).index(".turn")].style.display = 'none';
+
+                                        };
+
+                                    }
+                                </script>
+
                             </td>
 
                             <td class="column">
-                                <h:outputText class="compat" value="#{main.compatibilityByAudios[i]}"/>
+                                <h:outputText class="compat" value="#{main.compatibilityByAudios[i]}%"
+                                              style="font-size: 16px"/>
                             </td>
                             <td class="column">
-                                <h:outputText class="compat" value="#{main.resultCompatibility[i]}"/>
+                                <h:outputText class="compat" value="#{main.resultCompatibility[i]}%"
+                                              style="font-size: 16px"/>
                             </td>
 
                         </tr>
                     </c:forEach>
                     </tbody>
-
-
                 </table>
+
 
                 <h:inputHidden id="outp2"/>
                 <h:commandLink id="clear" action="#{main.clearAll}">
@@ -90,7 +130,7 @@
 
 
             <p>
-                <a class="btn btn-primary btn-large onwards"  href="/pages/index.xhtml">
+                <a class="btn btn-primary btn-large onwards" href="/pages/index.xhtml">
                     В начало
                 </a>
             </p>
@@ -102,6 +142,7 @@
             <p class="text-muted credit foot">© Denisevich K.S. 2016</p>
 
         </div>
+
 
     </f:view>
 

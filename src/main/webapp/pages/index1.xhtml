@@ -95,10 +95,21 @@
                         </div>
                     </div>
 
-                    <input type="submit" class='btn btn-primary btn-large submitResult'
-                           value="Узнать совместимость"/>
+                    <div class="going-to-final">
+                        <input type="submit" class='btn btn-primary btn-large submitResult'
+                               value="Узнать совместимость"/>
+                    </div>
 
                 </h:form>
+                <div id="load" style="display: none">
+
+                    <div id="block_1" class="barlittle"></div>
+                    <div id="block_2" class="barlittle"></div>
+                    <div id="block_3" class="barlittle"></div>
+                    <div id="block_4" class="barlittle"></div>
+                    <div id="block_5" class="barlittle"></div>
+
+                </div>
             </div>
         </div>
 
@@ -112,10 +123,13 @@
 
         <h:form id="clientForm">
 
+
             <h:inputHidden id="vkId"/>
             <h:commandLink id="link1" action="#{main.executeId()}">
                 <f:ajax execute="vkId"/>
             </h:commandLink>
+
+
 
             <h:inputHidden id="vkBdate"/>
             <h:commandLink id="link2" action="#{main.executeBdate()}">

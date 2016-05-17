@@ -3,6 +3,14 @@ function f() {
     errors = " ";
     isEmptyField = false;
 
+    var finals = document.getElementsByClassName('going-to-final');
+    finals[finals.length - 1].style.display = 'none';
+
+    var e1 = document.getElementsByClassName("button-add");
+    e1[e1.length - 1].style.display = 'none';
+
+    document.getElementById('load').style.display = 'flex';
+
     someActions(function () {
 
         if (myBool == false) {
@@ -10,6 +18,10 @@ function f() {
             return false;
 
         } else {
+
+            finals[finals.length - 1].style.display = 'flex';
+            document.getElementById('load').style.display = 'none';
+            e1[e1.length - 1].style.display = 'flex';
             return true;
         }
     });

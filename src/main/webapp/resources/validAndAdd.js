@@ -56,7 +56,13 @@ function add() {
     submit.className='btn btn-primary btn-large submitResult';
     submit.value='Узнать совместимость';
 
+    var goFinal = document.createElement('div');
+    goFinal.className = 'going-to-final';
+
+    goFinal.appendChild(submit);
+
+
     form.appendChild(divFirst);
-    form.appendChild(submit);
+    form.appendChild(goFinal);
 
 }
